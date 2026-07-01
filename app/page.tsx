@@ -8,7 +8,7 @@ export default function Home() {
   alignItems: "center",
   textAlign: "center",
   padding: "24px",
-  fontFamily: "Arial, sans-serif",
+  fontFamily: "Bessita Handwriting Free, sans-serif",
   background: "linear-gradient(to bottom, #ffffff, #e5e7eb)",
   color: "#111827"
     }}>

@@ -30,7 +30,7 @@ export default function Home() {
 
   {/* Content */}
   <div className="relative z-20">
-    <h1 className={`${bessita.className} text-7xl mb-30`}>
+    <h1 className={`${bessita.className} text-5xl md:text-7xl leading-tight mb-30`}>
   Hope In Each Moment
 </h1>
 

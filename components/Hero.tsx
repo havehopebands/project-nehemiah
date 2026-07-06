@@ -85,7 +85,7 @@ export default function Hero() {
     </p>
 
     <p className={`${techb.className} mt-10 text-sm opacity-50`}>
-      Project Nehemiah • Under Construction
+      Project Nehemiah • Under God's Construction
     </p>
 
     </div>

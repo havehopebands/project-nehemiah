@@ -1,11 +1,10 @@
+import CorePage from "@/components/CorePage";
+
 export default function Page() {
   return (
-    <main>
-      <h1>O</h1>
-
-      <p>
-        This Hope In Each Moment page is being prepared.
-      </p>
-    </main>
+    <CorePage
+      title="O"
+      subtitle="This Hope In Each Moment page is being prepared."
+    />
   );
 }

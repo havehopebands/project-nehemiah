@@ -1,11 +1,10 @@
-export default function HearPage() {
-  return (
-    <main>
-      <h1>H1</h1>
+import CorePage from "@/components/CorePage";
 
-      <p>
-        Today's Spoken Word
-      </p>
-    </main>
+export default function Page() {
+  return (
+    <CorePage
+      title="HEAR"
+      subtitle="Today's Spoken Word"
+    />
   );
 }

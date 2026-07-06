@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import localfont from "next/font/local";
 
 const bessita = localfont({ src: "../public/fonts/Bessita Handwriting Free.otf" });
@@ -21,12 +23,51 @@ export default function Hero() {
       muted
       playsInline
     >
-      <source src="/images/Fiber Optics Resized.mp4" type="video/mp4" />
+      <source src="/images/mountains.mp4" type="video/mp4" />
     </video>
+
   </div>
 
   {/* Overlay */}
-  <div className="absolute inset-0 bg-black/60 z-10"></div>
+  <div className="absolute inset-0 bg-black/60 z-10">
+  </div>
+
+{/* Core Page Navigation */}
+<div className="absolute top-6 left-0 right-0 z-20 flex flex-wrap justify-center gap-3 px-4">
+
+ <Link href="/h1" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+  HEAR
+</Link>
+
+<Link href="/a" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+  GROW
+</Link>
+
+<Link href="/v" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+  REFLECT
+</Link>
+
+<Link href="/e1" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+  LISTEN
+</Link>
+
+<Link href="/h2" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+  HOPE
+</Link>
+
+<Link href="/o" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+  PRAY
+</Link>
+
+<Link href="/p" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+  HELP
+</Link>
+
+<Link href="/e2" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+  DISCOVER
+</Link>
+
+</div>
 
   {/* Content */}
   <div className="relative z-20">
@@ -48,6 +89,15 @@ export default function Hero() {
     </p>
 
     </div>
+
+<a
+  href="https://www.vecteezy.com/free-videos/mountain"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="absolute bottom-3 right-4 z-20 text-xs text-white/40 hover:text-white/70"
+>
+  Mountain Stock Videos by Vecteezy
+</a>
 
   </main>
 

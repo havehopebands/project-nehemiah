@@ -23,21 +23,21 @@ export default function CorePage({ title, subtitle }: CorePageProps) {
     <div className="absolute inset-0 bg-black/60 -z-10"></div>
 
     {/* Content */}
-    <div>
+    <div className="w-full max-w-sm md:max-w-2xl px-4">
       <Image
         src="/icon.png"
         alt="Hope In Each Moment Logo"
         width={120}
         height={120}
         priority
-        className="mb-8 mx-auto"
+        className="w-24 md:w-32 h-auto mb-6 md:mb-8 mx-auto"
       />
 
-      <h1 className={`${brightwall.className} text-5xl mb-6`}>
+      <h1 className={`${brightwall.className} text-4xl md:text-6xl mb-4 md:mb-6`}>
         {title}
       </h1>
 
-      <p className="text-xl opacity-75">
+      <p className="text-base md:text-xl opacity-75">
         {subtitle}
       </p>
     </div>

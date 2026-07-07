@@ -12,7 +12,7 @@ export default function Hero() {
   return (
 
     <main
-  className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 text-white">
+  className="relative min-h-screen flex flex-col items-center justify-center md:justify-center text-center px-6 text-white overflow-hidden">
     
  {/* Background Video Container */}
   <div className="absolute inset-0 z-0">
@@ -33,45 +33,45 @@ export default function Hero() {
   </div>
 
 {/* Core Page Navigation */}
-<div className="absolute top-6 left-0 right-0 z-20 flex flex-wrap justify-center gap-3 px-4">
+<div className="absolute top-4 md:top-6 left-0 right-0 z-30 flex flex-wrap justify-center gap-2 md:gap-3 px-3 md:px-4">
 
- <Link href="/h1" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+ <Link href="/h1" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
   HEAR
 </Link>
 
-<Link href="/a" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+<Link href="/a" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
   GROW
 </Link>
 
-<Link href="/v" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+<Link href="/v" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
   REFLECT
 </Link>
 
-<Link href="/e1" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+<Link href="/e1" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
   LISTEN
 </Link>
 
-<Link href="/h2" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+<Link href="/h2" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
   HOPE
 </Link>
 
-<Link href="/o" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+<Link href="/o" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
   PRAY
 </Link>
 
-<Link href="/p" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+<Link href="/p" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
   HELP
 </Link>
 
-<Link href="/e2" className="rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20">
+<Link href="/e2" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
   DISCOVER
 </Link>
 
 </div>
 
   {/* Content */}
-  <div className="relative z-20">
-    <h1 className={`${bessita.className} text-5xl md:text-7xl leading-loose mb-20 mt-10`}>
+  <div className="relative z-20 mt-28 md:mt-0">
+    <h1 className={`${bessita.className} text-4xl sm:text-5xl md:text-7xl leading-normal md:leading-loose mb-10 md:mb-20`}>
   Hope In Each Moment
 </h1>
 
@@ -84,7 +84,7 @@ export default function Hero() {
       prayer, worship, encouragement, and guidance — one moment at a time.
     </p>
 
-    <p className={`${techb.className} mt-10 text-sm opacity-50`}>
+    <p className={`${techb.className} mt-6 md:mt-10 text-xs md:text-sm opacity-50`}>
       Project Nehemiah • Under God's Construction
     </p>
 
@@ -94,7 +94,7 @@ export default function Hero() {
   href="https://www.vecteezy.com/free-videos/mountain"
   target="_blank"
   rel="noopener noreferrer"
-  className="absolute bottom-3 right-4 z-20 text-xs text-white/40 hover:text-white/70"
+  className="absolute bottom-2 md:bottom-3 right-3 md:right-4 z-20 text-[10px] md:text-xs text-white/40 hover:text-white/70"
 >
   Mountain Stock Videos by Vecteezy
 </a>

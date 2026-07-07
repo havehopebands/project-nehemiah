@@ -84,7 +84,7 @@ export default function Hero() {
       prayer, worship, encouragement, and guidance — one moment at a time.
     </p>
 
-    <p className={`${techb.className} mt-6 md:mt-10 text-xs md:text-sm opacity-50`}>
+    <p className={`${techb.className} mt-6 md:mt-10 mb-5 md:mb-0 text-xs md:text-sm opacity-50`}>
       Project Nehemiah • Under God's Construction
     </p>
 
@@ -94,7 +94,7 @@ export default function Hero() {
   href="https://www.vecteezy.com/free-videos/mountain"
   target="_blank"
   rel="noopener noreferrer"
-  className="absolute bottom-2 md:bottom-3 right-3 md:right-4 z-20 text-[10px] md:text-xs text-white/40 hover:text-white/70"
+  className="absolute bottom-1 md:bottom-3 right-3 md:right-4 z-20 text-[8px] md:text-xs text-white/30 hover:text-white/70"
 >
   Mountain Stock Videos by Vecteezy
 </a>

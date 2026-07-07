@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { brightwall, jasper } from "@/lib/fonts";
 
 type CorePageProps = {
@@ -40,6 +41,14 @@ export default function CorePage({ title, subtitle }: CorePageProps) {
       <p className="text-base md:text-xl opacity-75">
         {subtitle}
       </p>
+
+      <Link
+         href="/"
+         className="inline-block mt-10 rounded-full border border-white/40 px-5 py-2 text-sm text-white hover:bg-white/20 transition"
+      >
+        Explore More Moments
+      </Link>
+
     </div>
 
   </main>

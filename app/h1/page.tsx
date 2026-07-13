@@ -1,10 +1,6 @@
-import CorePage from "@/components/CorePage";
+import HearContent from "@/components/HearContent";
+import { FT001 } from "@/data/ft001";
 
-export default function Page() {
-  return (
-    <CorePage
-      title="HEAR"
-      subtitle="Today's Spoken Word"
-    />
-  );
+export default function HearPage() {
+  return <HearContent hear={FT001.hear} />;
 }

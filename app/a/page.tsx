@@ -1,10 +1,6 @@
-import CorePage from "@/components/CorePage";
+import { FT001 } from "@/data/ft001";
+import AbsorbContent from "@/components/AbsorbContent";
 
 export default function Page() {
-  return (
-    <CorePage
-      title="GROW"
-      subtitle="This Hope In Each Moment page is being prepared."
-    />
-  );
+  return <AbsorbContent absorb={FT001.absorb} />;
 }

@@ -19,3 +19,7 @@ export const jasper = localFont({
 export const techb = localFont({
   src: "../public/fonts/techb___.ttf",
 });
+
+export const champagne = localFont({
+  src: "../public/fonts/Champagne.ttf",
+});

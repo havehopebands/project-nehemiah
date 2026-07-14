@@ -35,36 +35,84 @@ export default function Hero() {
 {/* Core Page Navigation */}
 <div className="absolute top-4 md:top-6 left-0 right-0 z-30 flex flex-wrap justify-center gap-2 md:gap-3 px-3 md:px-4">
 
- <Link href="/h1" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
-  HEAR
+<Link
+  href="/h1"
+  className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
+>
+  <span className="inline-flex items-baseline">
+  <span className="text-xl md:text-2xl font-bold leading-none">H</span>
+  <span className="text-xs md:text-sm leading-none">EAR</span>
+</span>
 </Link>
 
-<Link href="/a" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
-  GROW
+<Link
+  href="/a"
+  className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
+>
+  <span className="inline-flex items-baseline">
+    <span className="text-xl md:text-2xl font-bold leading-none">A</span>
+    <span className="text-xs md:text-sm leading-none">BSORB</span>
+  </span>
 </Link>
 
-<Link href="/v" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
-  REFLECT
+<Link
+  href="/a"
+  className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
+>
+  <span className="inline-flex items-baseline">
+    <span className="text-xl md:text-2xl font-bold leading-none">V</span>
+    <span className="text-xs md:text-sm leading-none">ALUE</span>
+  </span>
 </Link>
 
-<Link href="/e1" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
-  LISTEN
+<Link
+  href="/a"
+  className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
+>
+  <span className="inline-flex items-baseline">
+    <span className="text-xl md:text-2xl font-bold leading-none">E</span>
+    <span className="text-xs md:text-sm leading-none">XALT</span>
+  </span>
 </Link>
 
-<Link href="/h2" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
-  HOPE
+<Link
+  href="/a"
+  className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
+>
+  <span className="inline-flex items-baseline">
+    <span className="text-xl md:text-2xl font-bold leading-none">H</span>
+    <span className="text-xs md:text-sm leading-none">OPE</span>
+  </span>
 </Link>
 
-<Link href="/o" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
-  PRAY
+<Link
+  href="/a"
+  className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
+>
+  <span className="inline-flex items-baseline">
+    <span className="text-xl md:text-2xl font-bold leading-none">O</span>
+    <span className="text-xs md:text-sm leading-none">PEN UP</span>
+  </span>
 </Link>
 
-<Link href="/p" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
-  HELP
+<Link
+  href="/a"
+  className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
+>
+  <span className="inline-flex items-baseline">
+    <span className="text-xl md:text-2xl font-bold leading-none">P</span>
+    <span className="text-xs md:text-sm leading-none">RAY</span>
+  </span>
 </Link>
 
-<Link href="/e2" className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20">
-  DISCOVER
+<Link
+  href="/a"
+  className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
+>
+  <span className="inline-flex items-baseline">
+    <span className="text-xl md:text-2xl font-bold leading-none">E</span>
+    <span className="text-xs md:text-sm leading-none">NCOUNTER</span>
+  </span>
 </Link>
 
 </div>

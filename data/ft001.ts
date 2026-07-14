@@ -12,7 +12,7 @@ export const FT001 = {
 },
 
   absorb: {
-  devotionTitle: "Jesus Christ, our unchanging Savior and eternal Hope.",
+  devotionTitle: "Jesus Christ, our Unchanging Savior and Eternal Hope.",
   devotion: `Our world today is nothing like it was 10–15 years ago. In fact, we have experienced far more major leaps and milestones in technology over the past 15 years than we did in the previous 60 years combined. We now have electric vehicles everywhere and even AI helping us in everyday tasks. Technological advancement has accelerated at an incredible pace, transforming the way we live, work, and connect.
 
 Trying to keep up with everyday life while everything around us changes so quickly can leave us feeling overwhelmed, uncertain, and afraid of losing control over the things we once thought were secure.
@@ -28,8 +28,8 @@ So if there is ever an anchor we can hold on to — an anchor for our hopes, our
 Being the same yesterday and today and forever, Jesus Christ is unchanging and unchangeable. No sin, distress, or complication will cause Him to abandon us. His love is constant, unfailing, everlasting and endures forever. We can therefore have full confidence that He will faithfully guide and sustain us until His purpose and will is perfectly fulfilled.
 `,
   reflectionQuestions: [
-  "1. How does the unchanging nature of Jesus Christ provide comfort in your personal life? ",
-  "2. How can the unchanging nature of Christ help you when facing doubts or uncertainties about your faith and your life?",
+  "How does the unchanging nature of Jesus Christ provide comfort in your personal life? ",
+  "How can the unchanging nature of Christ help you when facing doubts or uncertainties about your faith and your life?",
 ],
   personalChallenge: "Identify one change or uncertainty in your life that has been weighing on you. Pray and surrender it to Jesus, trusting that even when circumstances change, He remains the same.",
   closingPrayer: `Heavenly Father,

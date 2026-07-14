@@ -1,7 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import BackgroundVideo from "./BackgroundVideo";
-import { champagne } from "@/lib/fonts";
+import { greatVibes, publicSans, redHatDisplay } from "@/lib/fonts";
 
 
 import Reveal from "./Reveal";
@@ -26,7 +25,7 @@ export default function HearContent({ hear }: HearContentProps) {
       {/* Content */}
     <Reveal duration={1.6}>
         <h2
-           className={champagne.className + " w-full text-center text-5xl sm:text-6xl md:text-7xl leading-tight tracking-tight mb-16"}
+           className={greatVibes.className + " w-full text-center text-5xl sm:text-6xl md:text-7xl leading-tight tracking-tight mb-16"}
 >
           God’s Word for You Today
         </h2>
@@ -37,11 +36,11 @@ export default function HearContent({ hear }: HearContentProps) {
          
 
    
-        <p className="text-lg font-semibold mb-6">
+        <p className= {redHatDisplay.className + " text-lg font-semibold mb-6"}>
           {hear.verseReference}
         </p>
 
-        <p className="text-2xl md:text-3xl leading-relaxed italic">
+        <p className= {publicSans.className + " text-2xl md:text-3xl leading-relaxed italic"}>
           "{hear.verseText}"
         </p>
 

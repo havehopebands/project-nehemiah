@@ -1,4 +1,26 @@
 import localFont from "next/font/local";
+import { Great_Vibes, Public_Sans, Red_Hat_Display } from "next/font/google";
+
+// =========================
+// Google Fonts (Primary)
+// =========================
+
+export const greatVibes = Great_Vibes({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+export const publicSans = Public_Sans({
+  subsets: ["latin"],
+});
+
+export const redHatDisplay = Red_Hat_Display({
+    subsets: ["latin"],
+});
+
+// =========================
+// Local Fonts
+// =========================
 
 export const bessita = localFont({
   src: "../public/fonts/Bessita Handwriting Free.otf",

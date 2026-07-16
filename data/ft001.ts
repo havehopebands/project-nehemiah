@@ -44,7 +44,7 @@ In Your most holy name, Amen.`,
 },
 
   value: {
-    identityStatements: [
+    identityStatements: 
       `You are not held together by the uncertainty around you.
 
        You are held by the unchanging love of Jesus.
@@ -53,7 +53,7 @@ In Your most holy name, Amen.`,
 
        Your worth is not defined by changing seasons, uncertain circumstances, or what happens around you.
 
-       You are valued by a Savior whose love and faithfulness remain constant.`]
+       You are valued by a Savior whose love and faithfulness remain constant.`
   },
 
   exalt: {},

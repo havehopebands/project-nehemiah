@@ -43,7 +43,18 @@ I anchor my soul to Your character, knowing that even if tomorrow brings more ch
 In Your most holy name, Amen.`,
 },
 
-  value: {},
+  value: {
+    identityStatements: [
+      `You are not held together by the uncertainty around you.
+
+       You are held by the unchanging love of Jesus.
+
+       The same Jesus who was faithful yesterday is with you today, and will still be with you tomorrow.
+
+       Your worth is not defined by changing seasons, uncertain circumstances, or what happens around you.
+
+       You are valued by a Savior whose love and faithfulness remain constant.`]
+  },
 
   exalt: {},
 };

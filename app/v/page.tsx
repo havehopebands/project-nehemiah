@@ -1,10 +1,7 @@
-import CorePage from "@/components/CorePage";
+import { FT001 } from "@/data/ft001";
+import ValueContent from "@/components/ValueContent";
+
 
 export default function Page() {
-  return (
-    <CorePage
-      title="REFLECT"
-      subtitle="This Hope In Each Moment page is being prepared."
-    />
-  );
+  return <ValueContent value={FT001.value} />;
 }

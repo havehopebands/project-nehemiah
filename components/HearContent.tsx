@@ -1,8 +1,7 @@
 import Link from "next/link";
 import BackgroundVideo from "./BackgroundVideo";
+import GlassCard from "./GlassCard";
 import { greatVibes, publicSans, redHatDisplay } from "@/lib/fonts";
-
-
 import Reveal from "./Reveal";
 
 type HearContentProps = {
@@ -32,7 +31,7 @@ export default function HearContent({ hear }: HearContentProps) {
     </Reveal>
 
     <Reveal delay={1.2}>
-        <div className="relative z-10 w-full max-w-3xl rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm px-8 py-12 text-center shadow-2xl">
+       <GlassCard className="px-8 py-12 text-center max-h-[45vh] overflow-y-auto">
          
 
    
@@ -45,7 +44,7 @@ export default function HearContent({ hear }: HearContentProps) {
         </p>
 
        
-      </div>
+      </GlassCard>
     </Reveal>
 
     <Reveal delay={3.0}>   

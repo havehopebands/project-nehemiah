@@ -8,7 +8,9 @@ export const FT001 = {
   verseReference: "Hebrews 13:8",
 
   verseText:
-    "Jesus Christ is the same yesterday and today and forever.",
+    `Jesus Christ is the same yesterday and today and forever.`,
+      
+
 },
 
   absorb: {

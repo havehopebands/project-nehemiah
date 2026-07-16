@@ -33,7 +33,7 @@ export default function ValueContent({ value }: ValueContentProps) {
       </Reveal>
 
       <Reveal delay={1.2}>
-        <div className="relative z-10 w-full max-w-3xl rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm px-8 py-12 text-center shadow-2xl max-h-[60vh] overflow-y-auto">
+        <div className="relative z-10 w-full max-w-3xl rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm px-8 py-12 text-center shadow-2xl h-[50vh] overflow-y-auto">
 
           <p
             className={

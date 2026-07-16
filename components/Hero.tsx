@@ -56,7 +56,7 @@ export default function Hero() {
 </Link>
 
 <Link
-  href="/a"
+  href="/v"
   className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
 >
   <span className="inline-flex items-baseline">
@@ -66,7 +66,7 @@ export default function Hero() {
 </Link>
 
 <Link
-  href="/a"
+  href="/e1"
   className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
 >
   <span className="inline-flex items-baseline">
@@ -76,7 +76,7 @@ export default function Hero() {
 </Link>
 
 <Link
-  href="/a"
+  href="/h2"
   className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
 >
   <span className="inline-flex items-baseline">
@@ -86,7 +86,7 @@ export default function Hero() {
 </Link>
 
 <Link
-  href="/a"
+  href="/o"
   className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
 >
   <span className="inline-flex items-baseline">
@@ -96,7 +96,7 @@ export default function Hero() {
 </Link>
 
 <Link
-  href="/a"
+  href="/p"
   className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
 >
   <span className="inline-flex items-baseline">
@@ -106,7 +106,7 @@ export default function Hero() {
 </Link>
 
 <Link
-  href="/a"
+  href="/e2"
   className="rounded-full border border-white/40 px-3 md:px-5 py-1 md:py-2 text-xs md:text-sm text-white hover:bg-white/20"
 >
   <span className="inline-flex items-baseline">

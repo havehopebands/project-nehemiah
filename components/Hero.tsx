@@ -111,7 +111,7 @@ export default function Hero() {
 >
   <span className="inline-flex items-baseline">
     <span className="text-xl md:text-2xl font-bold leading-none">E</span>
-    <span className="text-xs md:text-sm leading-none">NCOUNTER</span>
+    <span className="text-xs md:text-sm leading-none">MBARK</span>
   </span>
 </Link>
 

@@ -3,7 +3,7 @@ import CorePage from "@/components/CorePage";
 export default function Page() {
   return (
     <CorePage
-      title="LISTEN"
+      title="EXALT"
       subtitle="This Hope In Each Moment page is being prepared."
     />
   );

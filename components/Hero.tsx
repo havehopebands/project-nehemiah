@@ -81,7 +81,7 @@ export default function Hero() {
 >
   <span className="inline-flex items-baseline">
     <span className="text-xl md:text-2xl font-bold leading-none">H</span>
-    <span className="text-xs md:text-sm leading-none">OPE</span>
+    <span className="text-xs md:text-sm leading-none">EED</span>
   </span>
 </Link>
 
@@ -91,7 +91,7 @@ export default function Hero() {
 >
   <span className="inline-flex items-baseline">
     <span className="text-xl md:text-2xl font-bold leading-none">O</span>
-    <span className="text-xs md:text-sm leading-none">PEN UP</span>
+    <span className="text-xs md:text-sm leading-none">ASIS</span>
   </span>
 </Link>
 

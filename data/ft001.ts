@@ -5,57 +5,50 @@ export const FT001 = {
   },
 
   hear: {
-  verseReference: "Hebrews 13:8",
+  verseReference: "Isaiah 40:31",
 
   verseText:
-    `Jesus Christ is the same yesterday and today and forever.`,
+    `But those who wait upon the Lord will renew their strength;
+    they will mount up with wings like eagles;
+    they will run and not grow weary,
+    they will walk and not faint.`,
       
 
 },
 
   absorb: {
-  devotionTitle: "Jesus Christ, our Unchanging Savior and Eternal Hope.",
-  devotion: `Our world today is nothing like it was 10–15 years ago. In fact, we have experienced far more major leaps and milestones in technology over the past 15 years than we did in the previous 60 years combined. We now have electric vehicles everywhere and even AI helping us in everyday tasks. Technological advancement has accelerated at an incredible pace, transforming the way we live, work, and connect.
+  devotionTitle: "When God Carries You, You will Soar in Eagles' Wings",
+  devotion: `This passage falls in a section of Isaiah often called “The LORD Has No Equal” — a phrase worth pausing on. Every line here builds a picture of God's unmatched authority over everything He's made. If your view of God has gotten a little small lately, this is exactly where to look. It's the perfect runway leading into today's verse, stacking up reason after reason to place our confidence in him.
 
-Trying to keep up with everyday life while everything around us changes so quickly can leave us feeling overwhelmed, uncertain, and afraid of losing control over the things we once thought were secure.
+Look closely and you'll notice the rewards stacking up too. Beyond renewed strength, there's this sense of rising above — gaining altitude on our troubles. From up there, the tangled mess on the ground starts to look like a manageable shape, and our dependence on God comes into sharper focus. Problems shrink when God gets bigger in our view.
 
-But this is what the author of Hebrews reminds us: “Jesus Christ is the same yesterday and today and forever.” In the previous chapters and verses, the author reflects on the superiority of Jesus Christ. He had already challenged the readers to fix their eyes on Jesus so that they could run the race with perseverance and confident hearts. In verse 8, he affirms the reliability and unchanging nature of Jesus throughout the ages. 
+Handing over control isn't easy, though. Honestly, I catch myself in a kind of tug-of-war with God — surrendering a problem one moment, snatching it back the next. What makes me think I can manage things better than he can? And yet choosing to trust him isn't giving up control at all — it's claiming the wisest kind of control there is.
 
-If there is one important thing that is constant in this universe, it is Jesus Christ! He is the one Person we can depend on to be the same, regardless of the time or the spirit of the age. He will and always be the same - yesterday, today and forever!
+Trust changes what's possible. It lets us keep fighting, keep running, without running dry. I know that particular exhaustion — a full day of work, evening obligations, the endless demands of home — and I know the other side of it too: the lift that comes from handing an impossible situation over to God and watching him carry it. That kind of renewal only shows up when trust does.
 
-In the Old Testament, the patriarchs looked forward to Him as their coming Savior, their Messiah. In the New Testament, He fulfilled the prophecies and came to save the world. Even now, in our present time, He is still saving lives! And He will continue to do so in the ages to come. He is our Eternal Savior, our Living Hope.
-
-So if there is ever an anchor we can hold on to — an anchor for our hopes, our trust, and our entire lives — it is Jesus. He is reliable today, just as He has been even before time began. His words and teachings that guided the people during His earthly ministry remain just as true and dependable for us today. And He will continue to be the same for all eternity!
-
-Being the same yesterday and today and forever, Jesus Christ is unchanging and unchangeable. No sin, distress, or complication will cause Him to abandon us. His love is constant, unfailing, everlasting and endures forever. We can therefore have full confidence that He will faithfully guide and sustain us until His purpose and will is perfectly fulfilled.
+There's real comfort in knowing we won't buckle under everything life throws at us. Trusting God pays off. Some days we need that truth as a lifeline when things are falling apart. But it matters just as much on the good days — when life is going right, remember to thank him for the strength holding you up, for the energy to take on whatever's next.
 `,
   reflectionQuestions: [
-  "How does the unchanging nature of Jesus Christ provide comfort in your personal life? ",
-  "How can the unchanging nature of Christ help you when facing doubts or uncertainties about your faith and your life?",
+  "Do I trust God enough to let go of what weighs me down? ",
+  "What am I still holding on to that I need to let go of and trust God with?",
 ],
-  personalChallenge: "Identify one change or uncertainty in your life that has been weighing on you. Pray and surrender it to Jesus, trusting that even when circumstances change, He remains the same.",
-  closingPrayer: `Heavenly Father,
-
-I come before You to quiet my mind and steady my heart. I anchor my heart in Your unchanging nature. Circumstances shift, but You remain the same yesterday, today, and forever. 
-
-Lord, my current circumstances feel unpredictable and right now, I choose to intentionally lay these burdens at Your feet. I trust that the same Jesus who performed miracles, showed radical mercy, and provided for His people in the past is the exact same Jesus standing with me today. Your love does not diminish. Your power does not weaken. Your promises do not fail.
-
-I anchor my soul to Your character, knowing that even if tomorrow brings more change, You are already there. Thank You for Your steadfast grace and peace that guard my heart.
-
-In Your most holy name, Amen.`,
+  personalChallenge: "Identify difficulties in your life that has been weighing on you. Pray and surrender it to Jesus, trusting that even when circumstances are difficult, He will carry you.",
+  closingPrayer: `Lord, your plans never miss the mark, and I'm grateful for everything you provide. Your greatness is beyond words. Even when I can't trace your hand at work, teach me to trust you anyway. Open my eyes to see you clearly, and to see the path you've already set before me. Let your love move through everything I say and do, and let my life bring you honor. In Jesus' name, amen.`,
 },
 
   value: {
     identityStatements: 
-      `You are not held together by the uncertainty around you.
+      `You are strengthened by the Lord.
 
-       You are held by the unchanging love of Jesus.
+       You are renewed when you place your hope in God.
 
-       The same Jesus who was faithful yesterday is with you today, and will still be with you tomorrow.
+       You are sustained by God's unfailing power.
 
-       Your worth is not defined by changing seasons, uncertain circumstances, or what happens around you.
+       You are never alone in your weakness.
 
-       You are valued by a Savior whose love and faithfulness remain constant.`
+       You are not defined by your weariness.
+       
+       You are carried by God's faithfulness.`
   },
 
   exalt: {},

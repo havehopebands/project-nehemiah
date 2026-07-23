@@ -51,5 +51,9 @@ There's real comfort in knowing we won't buckle under everything life throws at 
        You are carried by God's faithfulness.`
   },
 
-  exalt: {},
+  exalt: {
+  title: "Eagles' Wings",
+  artist: "LifeGen Worship",
+  youtubeId: "LHtDhwdjjBA",
+  }
 };

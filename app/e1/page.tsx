@@ -1,10 +1,6 @@
-import CorePage from "@/components/CorePage";
+import ExaltContent from "@/components/ExaltContent";
+import { FT001 } from "@/data/ft001";
 
-export default function Page() {
-  return (
-    <CorePage
-      title="EXALT"
-      subtitle="This Hope In Each Moment page is being prepared."
-    />
-  );
+export default function ExaltPage() {
+  return <ExaltContent exalt={FT001.exalt} />;
 }

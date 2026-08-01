@@ -5,14 +5,12 @@ import { useEffect } from "react";
 type ModalProps = {
     isOpen: boolean;
     onClose: () => void;
-    title: string;
     children: React.ReactNode;
 };
 
 export default function Modal({
     isOpen,
     onClose,
-    title,
     children,
 }: ModalProps) {
     useEffect(() => {

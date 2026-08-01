@@ -1,4 +1,4 @@
-import ExaltContent from "@/components/ExaltContent";
+import ExaltContent from "@/components/core pages/ExaltContent";
 import { FT001 } from "@/data/ft001";
 
 export default function ExaltPage() {

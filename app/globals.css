@@ -27,4 +27,20 @@ body {
 .scroll-stable {
   scrollbar-gutter: stable;
 }  
+
+@layer components {
+  .nav-link {
+    @apply relative text-white/85 transition-all duration-300 hover:text-white hover:-translate-y-0.5;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute left-1/2 -bottom-1 h-0.5 w-0 -translate-x-1/2 transition-all duration-300;
+    background-color: #22c7c7;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}
 }

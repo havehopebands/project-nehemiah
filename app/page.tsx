@@ -1,8 +1,5 @@
-import Hero from "../components/Hero";
-
+import Switch from "@/components/hero/Switch";
 
 export default function Home() {
-  return (
-  <Hero />
-  );
-} 
+    return <Switch />;
+}

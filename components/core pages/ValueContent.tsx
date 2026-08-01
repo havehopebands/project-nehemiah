@@ -1,8 +1,8 @@
 import Link from "next/link";
-import BackgroundVideo from "./BackgroundVideo";
+import BackgroundVideo from "../BackgroundVideo";
 import { greatVibes, publicSans } from "@/lib/fonts";
 
-import Reveal from "./Reveal";
+import Reveal from "../Reveal";
 
 type ValueContentProps = {
   value: {

@@ -2,11 +2,13 @@ import Link from "next/link";
 
 import localfont from "next/font/local";
 
-const bessita = localfont({ src: "../public/fonts/Bessita Handwriting Free.otf" });
-const brightwall = localfont({ src: "../public/fonts/Brightwall Personal Use Only.ttf" });
-const geometr212 = localfont({ src: "../public/fonts/Geometr212 BkCn BT Book.ttf" });
-const jasper = localfont({ src: "../public/fonts/JaspersHandwriting-Regular.ttf" });
-const techb = localfont({ src: "../public/fonts/techb___.ttf" });
+import {
+    bessita,
+    brightwall,
+    geometr212,
+    jasper,
+    techb,
+} from "@/lib/fonts";
 
 export default function Hero() {
   return (
@@ -91,7 +93,7 @@ export default function Hero() {
 >
   <span className="inline-flex items-baseline">
     <span className="text-xl md:text-2xl font-bold leading-none">O</span>
-    <span className="text-xs md:text-sm leading-none">ASIS</span>
+    <span className="text-xs md:text-sm leading-none">VATION</span>
   </span>
 </Link>
 

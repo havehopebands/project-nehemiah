@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import BackgroundVideo from "./BackgroundVideo";
-import Reveal from "./Reveal";
-import StepTransition from "./StepTransition";
+import BackgroundVideo from "../BackgroundVideo";
+import Reveal from "../Reveal";
+import StepTransition from "../StepTransition";
 import { AnimatePresence } from "framer-motion";
 import { greatVibes, publicSans, redHatDisplay } from "@/lib/fonts";
 

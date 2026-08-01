@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import BackgroundVideo from "./BackgroundVideo";
-import GlassCard from "./GlassCard";
-import Reveal from "./Reveal";
+import BackgroundVideo from "../BackgroundVideo";
+import GlassCard from "../GlassCard";
+import Reveal from "../Reveal";
 import { greatVibes, publicSans, redHatDisplay } from "@/lib/fonts";
 import YouTubePlayer from "@/components/YouTubePlayer";
 

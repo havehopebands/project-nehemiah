@@ -1,8 +1,8 @@
 import Link from "next/link";
-import BackgroundVideo from "./BackgroundVideo";
-import GlassCard from "./GlassCard";
+import BackgroundVideo from "../BackgroundVideo";
+import GlassCard from "../GlassCard";
 import { greatVibes, publicSans, redHatDisplay } from "@/lib/fonts";
-import Reveal from "./Reveal";
+import Reveal from "../Reveal";
 
 type HearContentProps = {
   hear: {

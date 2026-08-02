@@ -33,21 +33,29 @@ export default function ProductFilm() {
                         max-w-5xl
                     "
 >
-              <img
-                    src="/images/float-q60.webp"
-                    alt="Watch the Have Hope Wristbands Film"
-                    className="
-                        w-full
-                        h-auto
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                        className="
+                            w-full
+                            h-auto
 
-                        transition-all
-                        duration-300
+                            transition-all
+                            duration-300
 
-                        hover:scale-[1.01]
+                            hover:scale-[1.01]
 
-                        cursor-pointer
-                    "
-                />
+                            cursor-pointer
+                        "
+                    >
+                        <source
+                            src="/images/float.webm"
+                            type="video/webm"
+                        />
+                    </video>
                 <div
                     className="
                         absolute

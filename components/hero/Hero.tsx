@@ -4,13 +4,16 @@ import ProductFilm from "../ProductFilm";
 import WristbandSection from "../WristbandSection";
 import Header from "../Header";
 
+
 import {
     bessita,
     brightwall,
     geometr212,
     jasper,
+    spaceGrotesk,
     techb,
 } from "@/lib/fonts";
+
 
 
 export default function Hero() {
@@ -75,8 +78,19 @@ export default function Hero() {
 
           
 
-          <p className={`${techb.className} text-3xl`}>
-               One wristband. Countless moments. One message of hope.
+          <p
+              className={
+                  spaceGrotesk.className +
+                  " text-xl md:text-3xl font-medium tracking-[0.12em] "
+              }
+          >
+              One wristband. 
+              <br/>
+              <br/>
+              Countless moments. 
+              <br/>
+              <br/>
+              One message of hope.
           </p>
 
 

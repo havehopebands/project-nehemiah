@@ -68,11 +68,11 @@ export default function Modal({
                 lg:max-w-4xl
                 xl:max-w-5xl
 
-                h-[80vh]
-                sm:h-[80vh]
-                md:h-[85vh]
-                lg:h-[85vh]
-                xl:h-[90vh]
+                h-[80dvh]
+                sm:h-[80dvh]
+                md:h-[75dvh]
+                lg:h-[75dvh]
+                xl:h-[90dvh]
 
                 rounded-3xl
                 bg-black

@@ -52,7 +52,7 @@ export default function ProductFilm() {
                         "
                     >
                         <source
-                            src="/images/float.webm"
+                            src="/images/Float.webm"
                             type="video/webm"
                         />
                     </video>

@@ -68,7 +68,7 @@ export default function Modal({
                 lg:max-w-4xl
                 xl:max-w-5xl
 
-                h-[80dvh]
+                h-[90dvh]
                 sm:h-[80dvh]
                 md:h-[75dvh]
                 lg:h-[75dvh]

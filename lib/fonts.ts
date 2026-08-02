@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import { Great_Vibes, Public_Sans, Red_Hat_Display, Space_Grotesk } from "next/font/google";
+import { Great_Vibes, Public_Sans, Red_Hat_Display, Space_Grotesk, Alumni_Sans} from "next/font/google";
 
 // =========================
 // Google Fonts (Primary)
@@ -21,6 +21,11 @@ export const redHatDisplay = Red_Hat_Display({
 export const spaceGrotesk = Space_Grotesk({
     subsets: ["latin"],
     weight: ["400", "500", "700"],
+});
+
+export const alumniSans = Alumni_Sans({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
 });
 
 // =========================

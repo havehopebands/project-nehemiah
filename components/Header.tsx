@@ -4,11 +4,17 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { redHatDisplay } from "@/lib/fonts";
+import CallingModal from "@/components/modal/CallingModal";
+import Modal from "@/components/modal/Modal";
+
+
 
 
 export default function Header() {
+
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const navItems = [
             {
@@ -163,6 +169,11 @@ export default function Header() {
                 {navItems.map((item) => (
                         <button
                             key={item.href}
+                            onClick={() => {
+                                if (item.label === "Our Calling") {
+                                    setIsModalOpen(true);
+                                }
+                            }}
                             className="nav-link"
                         >
                             {item.label}
@@ -227,6 +238,11 @@ export default function Header() {
                                 {navItems.map((item) => (
                                     <button
                                         key={item.href}
+                                        onClick={() => {
+                                            if (item.label === "Our Calling") {
+                                                setIsModalOpen(true);
+                                            }
+                                        }}
                                         className="nav-link"
                                     >
                                         {item.label}
@@ -236,6 +252,17 @@ export default function Header() {
                         </motion.div>
                     )}
                 </AnimatePresence>
+
+<Modal
+    isOpen={isModalOpen}
+    onClose={() => setIsModalOpen(false)}
+>
+    <CallingModal />
+</Modal>
+
+
+
+
 
     </header>
   );

@@ -8,6 +8,7 @@ import { redHatDisplay, publicSans } from "@/lib/fonts";
 import Modal from "@/components/modal/Modal";
 import StoryModal from "@/components/modal/StoryModal";
 
+
 export default function WristbandSection() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);

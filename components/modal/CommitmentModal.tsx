@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { redHatDisplay, publicSans, alumniSans, alumniSansSC } from "@/lib/fonts";
 
-export default function CallingModal() {
+export default function CommitmentModal() {
     return (
     <div
             className="
@@ -60,7 +60,7 @@ export default function CallingModal() {
                             " text-5xl md:text-6xl font-semibold tracking-wide text-[#C1A048]"
                         }
                     >
-                        Our Calling
+                        Our Commitment
                     </h1>       
             
                     <div className="mt-8 w-full max-w-3xl">
@@ -71,12 +71,12 @@ export default function CallingModal() {
                                 " text-[clamp(1rem,2vw,1.125rem)] leading-8 text-white/90"
                             }
                         >
-                            Guided by faith and our deep reverence for 
-                            the Great Commission, we believe God has 
-                            called us to inspire and cultivate a lifelong 
-                            pursuit of knowing and following Jesus Christ 
-                            through faithful daily spiritual disciplines 
-                            across this generation and the next.
+                            As faithful stewards of the ministry God has entrusted
+                            to us, and in pursuit of the Great Commission, we proclaim
+                            the Gospel of Jesus Christ by creating meaningful 
+                            opportunities for people to engage with God's Word, 
+                            grow in prayer, worship Him wholeheartedly, and deepen 
+                            their relationship with Him.
                         </p>
 
                         <p
@@ -85,10 +85,9 @@ export default function CallingModal() {
                                 " mt-6 text-[clamp(1rem,2vw,1.125rem)] leading-8 text-white/90"
                             }
                         >
-                            We long to see people rooted and anchored in Scripture, 
-                            built on prayer, shaped by worship, marked by His 
-                            faithfulness, and transformed through a deep
-                            communion with God.
+                            We will share biblically faithful, Christ-centered, 
+                            and Spirit-led resources that point hearts to Jesus 
+                            Christ and the hope found in Him alone.
                         </p>
 
                         <p
@@ -97,11 +96,11 @@ export default function CallingModal() {
                                 " mt-6 text-[clamp(1rem,2vw,1.125rem)] leading-8 text-white/90"
                             }
                         >
-                            We believe that technology has the potential to do more 
-                            than simply connect people with information—it can also 
-                            become a bridge that connects hearts to God. When placed 
-                            in His hands, even the simplest tools can become instruments 
-                            of hope, encouragement, and discipleship.
+                            We aim to steward technology with wisdom and integrity, 
+                            advancing the Gospel through digital discipleship. 
+                            Through every wristband, every scan, and every moment, 
+                            we pray that people will hear God's voice, respond in faith, 
+                            and grow in faithful obedience.
                         </p>
 
                         <p
@@ -110,21 +109,11 @@ export default function CallingModal() {
                                 " mt-6 text-[clamp(1rem,2vw,1.125rem)] leading-8 text-white/90"
                             }
                         >
-                            Through Have Hope Wristbands, we pray that every wearer will 
-                            embark on a journey of digital discipleship, discovering the 
-                            hope, peace, purpose, and life found in Jesus Christ.
+                            Above all, we commit to glorifying God in everything we do,
+                             acknowledging that this ministry belongs to Him. 
                         </p>
 
-                        <p
-                            className={
-                                publicSans.className +
-                                " mt-6 text-[clamp(1rem,2vw,1.125rem)] leading-8 text-white/90"
-                            }
-                        >
-                            May every scan, every page, every prayer, and every moment become 
-                            a step toward a deeper relationship with Him, leading to a 
-                            lifetime of faithful discipleship.
-                        </p>
+                        
 
                     </div>
 

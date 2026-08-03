@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { redHatDisplay } from "@/lib/fonts";
 import CallingModal from "@/components/modal/CallingModal";
 import Modal from "@/components/modal/Modal";
+import CommitmentModal from "@/components/modal/CommitmentModal";
 
 
 
@@ -14,7 +15,9 @@ export default function Header() {
 
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isCallingOpen, setIsCallingOpen] = useState(false);
+    const [isCommitmentOpen, setIsCommitmentOpen] = useState(false);
+
 
     const navItems = [
             {
@@ -51,6 +54,8 @@ export default function Header() {
     }, []);
 
   return (
+
+<>
     <header
             className="
                     fixed
@@ -171,7 +176,9 @@ export default function Header() {
                             key={item.href}
                             onClick={() => {
                                 if (item.label === "Our Calling") {
-                                    setIsModalOpen(true);
+                                    setIsCallingOpen(true);
+                                } else if (item.label === "Our Commitment") {
+                                    setIsCommitmentOpen(true);
                                 }
                             }}
                             className="nav-link"
@@ -240,7 +247,9 @@ export default function Header() {
                                         key={item.href}
                                         onClick={() => {
                                             if (item.label === "Our Calling") {
-                                                setIsModalOpen(true);
+                                                setIsCallingOpen(true);
+                                            } else if (item.label === "Our Commitment") {
+                                                setIsCommitmentOpen(true);
                                             }
                                         }}
                                         className="nav-link"
@@ -253,17 +262,29 @@ export default function Header() {
                     )}
                 </AnimatePresence>
 
-<Modal
-    isOpen={isModalOpen}
-    onClose={() => setIsModalOpen(false)}
->
-    <CallingModal />
-</Modal>
+
 
 
 
 
 
     </header>
+
+<Modal
+    isOpen={isCallingOpen}
+    onClose={() => setIsCallingOpen(false)}
+>
+    <CallingModal />
+</Modal>
+
+<Modal
+    isOpen={isCommitmentOpen}
+    onClose={() => setIsCommitmentOpen(false)}
+>
+    <CommitmentModal />
+</Modal>
+
+</>
+
   );
 }

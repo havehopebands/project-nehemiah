@@ -16,7 +16,10 @@ import {
 
 export default function Experience() {
 
-    const braceletRef = useRef(null);
+    const braceletRef = useRef<{
+    rotateLeft: () => void;
+    rotateRight: () => void;
+} | null>(null);
     const experienceRef = useRef<HTMLDivElement>(null);
     const [braceletScale, setBraceletScale] = useState(25);
     const [controlGap, setControlGap] = useState(24);

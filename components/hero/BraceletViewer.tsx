@@ -13,8 +13,8 @@ import {
 import { Group } from "three";
 import {
     animated,
+    to,
     useSpring,
-    SpringValue,
 } from "@react-spring/three";
 
 
@@ -44,7 +44,7 @@ function Wristband({
                 scale >= 25 ? -0.6 : -0.3,
                 0,
             ]}
-            rotation={rotation}
+            rotation={to(rotation, (r) => [r[0], r[1], r[2]] as [number, number, number])}
             scale={scale}
         >
             <primitive object={scene} />

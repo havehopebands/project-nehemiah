@@ -11,14 +11,18 @@ import {
     useRef,
 } from "react";
 import { Group } from "three";
-import { animated, useSpring } from "@react-spring/three";
+import {
+    animated,
+    useSpring,
+    SpringValue,
+} from "@react-spring/three";
 
 
 function Wristband({
         rotation,
         scale,
     }: {
-        rotation: [number, number, number];
+        rotation: SpringValue<number[]>;
         scale: number;
     }) {
 

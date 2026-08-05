@@ -15,7 +15,7 @@ export default function ValueContent({ value }: ValueContentProps) {
     <main className="relative min-h-screen flex flex-col items-center justify-center px-6 text-white overflow-hidden">
 
       <BackgroundVideo
-        video="/videos/value.mp4"
+        video="/videos/value.webm"
         attributionText="Video via Vecteezy.com"
         attributionHref="https://www.vecteezy.com/free-videos/looping"
       />

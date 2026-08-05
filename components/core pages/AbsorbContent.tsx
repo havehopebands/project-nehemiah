@@ -28,7 +28,7 @@ export default function AbsorbContent({
     <main className="relative min-h-screen flex flex-col items-center justify-center px-6 text-white overflow-hidden">
 
       <BackgroundVideo
-        video="/videos/absorb.mp4"
+        video="/videos/absorb.webm"
         attributionText="Video via Vecteezy.com"
         attributionHref="https://www.vecteezy.com/free-videos/flying-over-trees"
       />

@@ -1,5 +1,12 @@
 import localFont from "next/font/local";
-import { Great_Vibes, Public_Sans, Red_Hat_Display, Space_Grotesk, Alumni_Sans, Alumni_Sans_SC} from "next/font/google";
+import { Great_Vibes, 
+        Public_Sans, 
+        Red_Hat_Display, 
+        Space_Grotesk, 
+        Alumni_Sans, 
+        Alumni_Sans_SC,
+        Quicksand,  
+      } from "next/font/google";
 
 // =========================
 // Google Fonts (Primary)
@@ -29,6 +36,11 @@ export const alumniSans = Alumni_Sans({
 });
 
 export const alumniSansSC = Alumni_Sans_SC({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
+});
+
+export const quicksand = Quicksand({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"],
 });

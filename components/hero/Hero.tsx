@@ -14,7 +14,8 @@ import {
     jasper,
     spaceGrotesk,
     techb,
-} from "@/lib/fonts";
+    alumniSansSC
+    } from "@/lib/fonts";
 
 
 
@@ -53,7 +54,7 @@ export default function Hero() {
       muted
       playsInline
     >
-      <source src="/images/mountains.mp4" type="video/mp4" />
+      <source src="/images/mountains-3.webm" type="video/webm" />
     </video>
 
   </div>
@@ -82,8 +83,8 @@ export default function Hero() {
 
           <p
               className={
-                  spaceGrotesk.className +
-                  " text-xl md:text-3xl font-medium tracking-[0.12em] "
+                  alumniSansSC.className +
+                  " text-xl md:text-5xl font-medium tracking-[0.12em] "
               }
           >
               One wristband. 

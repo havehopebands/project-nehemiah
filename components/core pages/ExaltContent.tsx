@@ -42,7 +42,7 @@ export default function ExaltContent({
 >
 
       <BackgroundVideo
-        video="/videos/exalt.mp4"
+        video="/videos/exalt.webm"
         attributionText="Video via Vecteezy.com"
         attributionHref="https://www.vecteezy.com/free-videos/trees"
       />

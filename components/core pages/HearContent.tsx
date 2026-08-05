@@ -16,7 +16,7 @@ export default function HearContent({ hear }: HearContentProps) {
     <main className="relative min-h-screen flex flex-col items-center justify-center px-6 text-white overflow-hidden">
 
     <BackgroundVideo
-        video="/videos/hear.mp4"
+        video="/videos/hear.webm"
         attributionText="Video via Vecteezy.com"
         attributionHref="https://www.vecteezy.com/video/2041740-christmas-holiday-bible-seamless-motion-loop"
 />

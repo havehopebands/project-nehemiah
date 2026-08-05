@@ -7,7 +7,7 @@ import { redHatDisplay } from "@/lib/fonts";
 import CallingModal from "@/components/modal/CallingModal";
 import Modal from "@/components/modal/Modal";
 import CommitmentModal from "@/components/modal/CommitmentModal";
-
+import AboutModal from "@/components/modal/AboutModal";
 
 
 
@@ -17,11 +17,11 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [isCallingOpen, setIsCallingOpen] = useState(false);
     const [isCommitmentOpen, setIsCommitmentOpen] = useState(false);
-
+    const [isAboutOpen, setIsAboutOpen] = useState(false);
 
     const navItems = [
             {
-                label: "About",
+                label: "Our Story",
                 href: "#about",
             },
             {
@@ -33,11 +33,11 @@ export default function Header() {
                 href: "#our-commitment",
             },
             {
-                label: "Experience",
+                label: "The Experience",
                 href: "#experience",
             },
             {
-                label: "Support",
+                label: "Your Support",
                 href: "#support",
             },
             ];
@@ -179,6 +179,8 @@ export default function Header() {
                                     setIsCallingOpen(true);
                                 } else if (item.label === "Our Commitment") {
                                     setIsCommitmentOpen(true);
+                                } else if (item.label === "Our Story") {
+                                    setIsAboutOpen(true);
                                 }
                             }}
                             className="nav-link"
@@ -250,7 +252,10 @@ export default function Header() {
                                                 setIsCallingOpen(true);
                                             } else if (item.label === "Our Commitment") {
                                                 setIsCommitmentOpen(true);
+                                            } else if (item.label === "Our Story") {
+                                                setIsAboutOpen(true);
                                             }
+                                            
                                         }}
                                         className="nav-link"
                                     >
@@ -282,6 +287,13 @@ export default function Header() {
     onClose={() => setIsCommitmentOpen(false)}
 >
     <CommitmentModal />
+</Modal>
+
+<Modal
+    isOpen={isAboutOpen}
+    onClose={() => setIsAboutOpen(false)}
+>
+    <AboutModal />
 </Modal>
 
 </>

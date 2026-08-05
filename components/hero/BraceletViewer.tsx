@@ -14,6 +14,7 @@ import { Group } from "three";
 import {
     animated,
     to,
+    SpringValue,
     useSpring,
 } from "@react-spring/three";
 

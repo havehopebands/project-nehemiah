@@ -104,7 +104,7 @@ export default function Modal({
                             absolute
                             top-5
                             right-5
-                            z-20
+                            z-50
                             flex
                             h-10
                             w-10

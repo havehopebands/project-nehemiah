@@ -3,6 +3,10 @@
 import { quicksand } from "@/lib/fonts";
 import BackgroundVideo from "@/components/BackgroundVideo";
 import BraceletViewer from "./BraceletViewer";
+import Modal from "@/components/modal/Modal";
+import H1Expi from "@/components/modal/H1Expi";
+import AExpi from "@/components/modal/AExpi";
+
 import {
     useEffect,
     useRef,
@@ -25,6 +29,12 @@ export default function Experience() {
     const [controlGap, setControlGap] = useState(24);
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [selectedPlane, setSelectedPlane] = useState<number | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const experiences = [
+    <H1Expi key="h1" />,
+    <AExpi key="a" />,
+];
 
     useEffect(() => {
 
@@ -180,6 +190,14 @@ export default function Experience() {
                         onCenteredIndexChange={setCurrentIndex}
                         onPlaneClick={(index) => {
                             console.log("Experience received click:", index);
+
+                            if (
+                                index === 0 || 
+                                index === 1
+                            ) {
+                                setSelectedPlane(index);
+                                setIsModalOpen(true);
+                            }
                         }}
                     />
 
@@ -271,6 +289,17 @@ export default function Experience() {
                     
 
             </div>    
+
+            <Modal
+                isOpen={isModalOpen}
+                onClose={() => {
+                    setIsModalOpen(false);
+                    setSelectedPlane(null);
+                }}
+            >
+                {selectedPlane !== null && experiences[selectedPlane]}
+            </Modal>
+
 
         </main>
     );

@@ -33,8 +33,8 @@ export default function Header() {
                 href: "#our-commitment",
             },
             {
-                label: "The Experience",
-                href: "#experience",
+                label: "Our Pursuit",
+                href: "#our-pursuit",
             },
             {
                 label: "Your Support",

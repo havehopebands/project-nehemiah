@@ -30,7 +30,7 @@ export default function ProductFilm() {
                         group
                         relative
                         w-full
-                        max-w-5xl
+                        max-w-2xl
                     "
 >
                     <video
@@ -42,100 +42,40 @@ export default function ProductFilm() {
                         className="
                             w-full
                             h-auto
-
+                            rounded-2xl
                             transition-all
                             duration-300
 
                             hover:scale-[1.01]
-
+                            hover:brightness-110
                             cursor-pointer
                         "
                     >
                         <source
-                            src="/images/Float.webm"
+                            src="/images/teaser_540p.webm"
                             type="video/webm"
                         />
                     </video>
-                <div
-                    className="
-                        absolute
-                        inset-0
-
-                        flex
-                        items-start
-                        justify-center
-
-                        pointer-events-none
-
-                        pt-0
-                        sm:pt-16
-                    "
->
-                   <motion.div
-                        animate={{
-                            scale: [1, 1.3, 1],
-                            backgroundColor: [
-                                "rgba(255,255,255,0.03)",
-                                "rgba(255,255,255,0.12)",
-                                "rgba(255,255,255,0.03)",
-                            ],
-                            borderColor: [
-                                "rgba(255,255,255,0.10)",
-                                "rgba(255,255,255,0.35)",
-                                "rgba(255,255,255,0.10)",
-                            ],
-                        }}
-                        transition={{
-                            duration: 1.5,
-                            repeat: Infinity,
-                            repeatType: "mirror",
-                            ease: "easeInOut",
-                        }}
-                    className="
-                        w-16
-                        h-16
-                        sm:w-20
-                        sm:h-20
-                        rounded-full
-
-                        bg-white/1
-                        backdrop-blur-md
-
-                        border
-                        border-white/10
-
-                        flex
-                        items-center
-                        justify-center
-
-                        shadow-xl
-
-                      
-
-                        group-hover:scale-110
-                        group-hover:bg-white/10
-                        group-hover:border-white/30
-                    "
-     >
-                            <div
-                                className="
-                                        ml-1
-
-                                        w-0
-                                        h-0
-
-                                        border-y-[10px]
-                                        sm:border-y-[12px]
-                                        border-y-transparent
-
-                                        border-l-[18px]
-                                        sm:border-l-[18px]
-                                        border-l-white
-                                "
-                                />
-                            </motion.div>
-                    </div>
+                
             </button>
+
+            <p
+                className="
+                    mt-4
+
+                    text-xs
+                    sm:text-sm
+
+                    tracking-wide
+
+                    text-white/60
+
+                    transition-colors
+                    duration-300
+                "
+            >
+                Click the teaser to watch the full product film.
+            </p>
  
         <AnimatePresence>
         {isOpen && (

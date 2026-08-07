@@ -24,6 +24,8 @@ export default function Experience() {
     const [braceletScale, setBraceletScale] = useState(25);
     const [controlGap, setControlGap] = useState(24);
 
+    const [currentIndex, setCurrentIndex] = useState(0);
+
     useEffect(() => {
 
         if (!experienceRef.current) return;
@@ -167,13 +169,21 @@ export default function Experience() {
                             and tap a QR code.
                         </p>
 
+                        
+
                     </div>
 
 
                     <BraceletViewer
                         ref={braceletRef}
                         scale={braceletScale}
+                        onCenteredIndexChange={setCurrentIndex}
+                        onPlaneClick={(index) => {
+                            console.log("Experience received click:", index);
+                        }}
                     />
+
+                    
 
 
                     <div

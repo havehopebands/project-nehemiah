@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import Reveal from "@/components/Reveal";
 import Image from "next/image";
 import { redHatDisplay, publicSans } from "@/lib/fonts";
@@ -15,20 +14,34 @@ export default function WristbandSection() {
 
   return (
     <section
-      className="relative overflow-hidden bg-neutral-950 py-24"
+      className="relative overflow-hidden py-24"
     >
-      <div className="
-                mx-auto 
-                flex 
-                max-w-7xl 
-                flex-col 
-                items-center 
-                gap-16
-                px-6 
-                lg:flex-row
-                lg:justify-between
-                "
-    >  
+      <div
+        className="
+          mx-auto
+
+          max-w-7xl
+
+          rounded-[2rem]
+
+          border
+          border-white/10
+
+          bg-white/5
+          backdrop-blur-md
+
+          px-8
+          py-10
+
+          flex
+          flex-col
+          items-center
+          gap-16
+
+          lg:flex-row
+          lg:justify-between
+        "
+      >
 
         {/* LEFT */}
         <Reveal>
@@ -68,7 +81,7 @@ export default function WristbandSection() {
                 " mt-10 text-lg font-medium text-yellow-400 transition hover:translate-x-1"
               }
             >
-              Explore the Journey →
+              Discover the journey →
             </button>
 
           </div>
@@ -76,10 +89,7 @@ export default function WristbandSection() {
 
         {/* RIGHT */}
         <Reveal delay={0.2}>
-          <motion.div
-            whileHover={{ scale: 1.03 }}
-            transition={{ duration: 0.4 }}
-            className="flex justify-center"
+          <div className="flex justify-center"
           >
             <Image
                 src="/images/pray-1.png"
@@ -97,7 +107,7 @@ export default function WristbandSection() {
                     rounded-3xl
                 "
                 />
-          </motion.div>
+          </div>
         </Reveal>
 
       </div>

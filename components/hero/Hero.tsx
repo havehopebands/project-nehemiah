@@ -7,6 +7,7 @@ import WristbandSection from "../WristbandSection";
 import Header from "../Header";
 
 
+
 import {
     bessita,
     brightwall,
@@ -45,19 +46,18 @@ export default function Hero() {
       <Header />
 
 
- {/* Background Video Container */}
-  <div className="fixed inset-0 -z-20">
-    <video
-      className="w-full h-full object-cover"
-      autoPlay
-      loop
-      muted
-      playsInline
-    >
-      <source src="/images/mountains-3.webm" type="video/webm" />
-    </video>
-
-  </div>
+{/* Background Video Container */}
+<div className="fixed inset-0 -z-20">
+  <video
+    className="w-full h-full object-cover"
+    autoPlay
+    loop
+    muted
+    playsInline
+  >
+    <source src="/images/mountains-3.webm" type="video/webm" />
+  </video>
+</div>
 
   {/* Overlay */}
   <div className="fixed inset-0 bg-black/60 -z-10">
@@ -101,7 +101,46 @@ export default function Hero() {
 
           <WristbandSection />
 
+          <section
+              className="
+                  py-12
 
+                  flex
+                  justify-center
+              "
+          >
+              <Link
+                  href="/experience"
+                  className="
+                      rounded-full
+
+                      border
+                      border-white/10
+
+                      bg-white/5
+                      backdrop-blur-md
+
+                      px-8
+                      py-4
+
+                      text-sm
+                      tracking-[0.2em]
+                      uppercase
+
+                      text-white/70
+
+                      transition-all
+                      duration-300
+
+                      hover:bg-white/10
+                      hover:text-white
+                  "
+              >
+                  Begin the experience
+              </Link>
+          </section>
+
+          
           <p className="max-w-2xl mt-20 mb-5 opacity-75 mx-auto">
                ...
           </p>

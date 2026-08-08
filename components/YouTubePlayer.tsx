@@ -150,9 +150,9 @@ useEffect(() => {
 
     <div
       className="
-        px-6
-        pt-6
-        pb-4
+        px-4
+        pt-3
+        pb-2
         flex
         flex-col
         items-center
@@ -163,20 +163,20 @@ useEffect(() => {
         src={`https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`}
         alt="Worship Song"
         className="
-          w-52
-          h-52
-          object-cover
-          rounded-xl
-          shadow-lg
+        w-[clamp(9rem,48vw,13rem)]
+        h-[clamp(9rem,48vw,13rem)]
+        object-cover
+        rounded-xl
+        shadow-lg
         "
       />
 
       <h3
         className="
-          text-2xl
+          text-[clamp(1.5rem,5vw,2rem)]
           font-semibold
           text-center
-          mt-4
+          mt-2
         "
       >
         {title}
@@ -184,6 +184,7 @@ useEffect(() => {
 
       <p
         className="
+          text-[clamp(0.875rem,3vw,1rem)]
           text-white/80
           mt-1
         "
@@ -194,7 +195,7 @@ useEffect(() => {
       <div
         className="
           w-full
-          mt-4
+          mt-2
         "
       >
 
@@ -261,9 +262,9 @@ useEffect(() => {
 
           }}
         className="
-          mt-4        
-          w-16
-          h-16
+          mt-2
+          w-14
+          h-14
           rounded-full
           bg-white/10
           backdrop-blur-md
@@ -318,9 +319,9 @@ useEffect(() => {
         target="_blank"
         rel="noopener noreferrer"
         className="
-          mt-4
+          mt-2
           px-5
-          py-2
+          py-1.5
           rounded-full
           bg-white/10
           backdrop-blur-md

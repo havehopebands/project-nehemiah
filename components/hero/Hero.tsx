@@ -136,7 +136,7 @@ export default function Hero() {
                       hover:text-white
                   "
               >
-                  Begin the experience
+                  Explore the Wristband
               </Link>
           </section>
 

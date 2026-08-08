@@ -8,17 +8,18 @@ export default function H1Expi() {
         <main
             className="
                 relative
-                h-dvh
+                h-full
                 overflow-hidden
             "
         >
             <Image
-                src="/images/qr-grid.png"
+                src="/images/h1-expi.png"
                 alt=""
                 fill
                 priority
                 className="
-                    object-cover
+                    object-contain
+                    rounded-3xl
                 "
             />
 
@@ -38,33 +39,7 @@ export default function H1Expi() {
                     px-8
                 "
             >
-                <h1
-                    className={
-                        quicksand.className +
-                        `
-                        text-white
-                        text-[clamp(2.4rem,7vw,5rem)]
-                        leading-none
-                        text-center
-                        `
-                    }
-                >
-                    HEAR
-                </h1>
-
-                <p
-                    className={
-                        quicksand.className +
-                        `
-                        mt-8
-
-                        text-white/80
-                        text-center
-                        `
-                    }
-                >
-                    Body placeholder
-                </p>
+               
             </div>
         </main>
     );

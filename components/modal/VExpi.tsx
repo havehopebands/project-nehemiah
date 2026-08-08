@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { quicksand } from "@/lib/fonts";
 
-export default function AExpi() {
+export default function VExpi() {
     return (
         <main
             className="
@@ -13,7 +13,7 @@ export default function AExpi() {
             "
         >
             <Image
-                src="/images/a-expi.png"
+                src="/images/v-expi.png"
                 alt=""
                 fill
                 priority
@@ -38,7 +38,7 @@ export default function AExpi() {
                     px-8
                 "
             >
-                
+               
             </div>
         </main>
     );

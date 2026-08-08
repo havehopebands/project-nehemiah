@@ -25,7 +25,20 @@ export default function AbsorbContent({
  
 
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-center px-6 text-white overflow-hidden">
+    <main 
+      className="
+      relative
+      h-dvh
+      flex 
+      flex-col 
+      items-center 
+      justify-center 
+      px-6
+      py-8 
+      text-white 
+      overflow-hidden
+      "
+    >
 
       <BackgroundVideo
         video="/videos/absorb.webm"
@@ -39,7 +52,7 @@ export default function AbsorbContent({
           <h2
             className={
               greatVibes.className +
-              " w-full text-center text-5xl sm:text-6xl md:text-7xl leading-tight mb-16"
+              " w-full text-center text-[clamp(2.75rem,8vw,4.5rem)] leading-tight mb-16"
             }
           >
             God's Message for You Today
@@ -59,7 +72,7 @@ export default function AbsorbContent({
         <h3
           className={
             redHatDisplay.className +
-            " text-2xl font-semibold text-center px-2 pt-8 mb-6"
+            " text-[clamp(1.5rem,4vw,2rem)] font-semibold text-center px-2 pt-8 mb-6"
           }
         >
           {absorb.devotionTitle}
@@ -69,7 +82,7 @@ export default function AbsorbContent({
           <p
             className={
               publicSans.className +
-              " leading-relaxed whitespace-pre-line"
+              " text-[clamp(1rem,3.5vw,1.25rem)] leading-relaxed whitespace-pre-line"
             }
           >
             {absorb.devotion}
@@ -85,7 +98,7 @@ export default function AbsorbContent({
             }
           >
             <span>Reflect on This</span>
-            <span className="block text-xl leading-none">↓</span>
+            <span className="block text-[clamp(1.125rem,3vw,1.25rem)] leading-none">↓</span>
           </button>
         </div>
 
@@ -97,7 +110,7 @@ export default function AbsorbContent({
         <h3
           className={
             redHatDisplay.className +
-            " text-2xl font-semibold text-center px-2 pt-8 mb-6"
+            " text-[clamp(1.5rem,4vw,2rem)] font-semibold text-center px-2 pt-8 mb-6"
           }
         >
           Reflection Questions
@@ -107,7 +120,7 @@ export default function AbsorbContent({
           <ul
             className={
               publicSans.className +
-              " list-disc pl-6 space-y-4"
+              " text-[clamp(1rem,3.5vw,1.25rem)] list-disc pl-6 space-y-4"
             }
           >
             {absorb.reflectionQuestions.map((question, index) => (
@@ -126,7 +139,7 @@ export default function AbsorbContent({
             }
           >
             <span>Respond to God</span>
-            <span className="block text-xl leading-none">↓</span>
+            <span className="block text-[clamp(1.125rem,3vw,1.25rem)] leading-none">↓</span>
           </button>
         
       </>
@@ -137,7 +150,7 @@ export default function AbsorbContent({
         <h4
           className={
             redHatDisplay.className +
-            " text-xl font-semibold text-center mt-8 mb-3"
+            " text-[clamp(1.25rem,3.5vw,1.5rem)] font-semibold text-center mt-8 mb-3"
           }
         >
           Personal Challenge
@@ -146,7 +159,7 @@ export default function AbsorbContent({
         <p
           className={
             publicSans.className +
-            " leading-relaxed whitespace-pre-line mt-4 mb-8"
+            " text-[clamp(1rem,3.5vw,1.25rem)] leading-relaxed whitespace-pre-line mt-4 mb-8"
           }
         >
           {absorb.personalChallenge}
@@ -155,7 +168,7 @@ export default function AbsorbContent({
         <h4
           className={
             redHatDisplay.className +
-            " text-xl font-semibold text-center mb-3"
+            " text-[clamp(1.25rem,3.5vw,1.5rem)] font-semibold text-center mb-3"
           }
         >
           Closing Prayer
@@ -164,7 +177,7 @@ export default function AbsorbContent({
         <p
           className={
             publicSans.className +
-            " leading-relaxed whitespace-pre-line mt-4"
+            " text-[clamp(1rem,3.5vw,1.25rem)] leading-relaxed whitespace-pre-line mt-4"
           }
         >
           {absorb.closingPrayer}

@@ -1,10 +1,8 @@
-import CorePage from "@/components/CorePage";
+import HeedContent from "@/components/core pages/HeedContent";
 
 export default function Page() {
   return (
-    <CorePage
-      title="HEED"
-      subtitle="This Hope In Each Moment page is being prepared."
+    <HeedContent
     />
   );
 }

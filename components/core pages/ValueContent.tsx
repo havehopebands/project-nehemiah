@@ -12,7 +12,20 @@ type ValueContentProps = {
 
 export default function ValueContent({ value }: ValueContentProps) {
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-center px-6 text-white overflow-hidden">
+    <main 
+        className="
+        relative 
+        h-dvh
+        flex
+        flex-col 
+        items-center 
+        justify-center 
+        px-6
+        py-8 
+        text-white 
+        overflow-hidden
+        "
+      >
 
       <BackgroundVideo
         video="/videos/value.webm"
@@ -25,7 +38,7 @@ export default function ValueContent({ value }: ValueContentProps) {
         <h2
           className={
             greatVibes.className +
-            " w-full text-center text-5xl sm:text-6xl md:text-7xl leading-tight tracking-tight mb-16"
+            " w-full text-center text-[clamp(2.75rem,8vw,4.5rem)] leading-tight tracking-tight mb-16"
           }
         >
           God Wants You to Know...
@@ -38,7 +51,7 @@ export default function ValueContent({ value }: ValueContentProps) {
           <p
             className={
               publicSans.className +
-              " text-xl md:text-2xl leading-relaxed whitespace-pre-line"
+              " text-[clamp(1rem,3.5vw,1.25rem)] leading-relaxed whitespace-pre-line"
             }
           >
             {value.identityStatements}

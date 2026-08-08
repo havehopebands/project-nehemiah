@@ -6,6 +6,12 @@ import BraceletViewer from "./BraceletViewer";
 import Modal from "@/components/modal/Modal";
 import H1Expi from "@/components/modal/H1Expi";
 import AExpi from "@/components/modal/AExpi";
+import VExpi from "@/components/modal/VExpi";
+import E1Expi from "@/components/modal/E1Expi";
+import H2Expi from "@/components/modal/H2Expi";
+import OExpi from "@/components/modal/OExpi";
+import PExpi from "@/components/modal/PExpi";
+import E2Expi from "@/components/modal/E2Expi";
 
 import {
     useEffect,
@@ -32,9 +38,15 @@ export default function Experience() {
     const [selectedPlane, setSelectedPlane] = useState<number | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const experiences = [
-    <H1Expi key="h1" />,
-    <AExpi key="a" />,
-];
+        <H1Expi key="h1" />,
+        <AExpi key="a" />,
+        <VExpi key="v" />,
+        <E1Expi key="e1" />,
+        <H2Expi key="h2" />,
+        <OExpi key="o" />,
+        <PExpi key="p" />,
+        <E2Expi key="e2" />,
+    ];
 
     useEffect(() => {
 
@@ -193,7 +205,13 @@ export default function Experience() {
 
                             if (
                                 index === 0 || 
-                                index === 1
+                                index === 1 || 
+                                index === 2 ||
+                                index === 3 ||
+                                index === 4 ||
+                                index === 5 ||
+                                index === 6 ||
+                                index === 7
                             ) {
                                 setSelectedPlane(index);
                                 setIsModalOpen(true);

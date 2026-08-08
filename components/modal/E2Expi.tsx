@@ -3,17 +3,17 @@
 import Image from "next/image";
 import { quicksand } from "@/lib/fonts";
 
-export default function AExpi() {
+export default function E2Expi() {
     return (
         <main
             className="
                 relative
-                h-full
+                h-dvh
                 overflow-hidden
             "
         >
             <Image
-                src="/images/a-expi.png"
+                src="/images/tempo-expi.png"
                 alt=""
                 fill
                 priority
@@ -38,7 +38,7 @@ export default function AExpi() {
                     px-8
                 "
             >
-                
+               
             </div>
         </main>
     );

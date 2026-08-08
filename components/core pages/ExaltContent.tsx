@@ -28,14 +28,13 @@ export default function ExaltContent({
     <main
   className="
     relative
-    min-h-screen
+    h-dvh
     flex
     flex-col
     items-center
-    justify-start
+    justify-center
     px-6
-    pt-12
-    pb-8
+    py-8
     text-white
     overflow-hidden
   "
@@ -53,7 +52,7 @@ export default function ExaltContent({
           <h2
             className={
               greatVibes.className +
-              " w-full text-center text-5xl sm:text-6xl md:text-7xl leading-tight mb-16"
+              " w-full text-center text-[clamp(2.75rem,8vw,6rem)] leading-tight mb-8"
             }
           >
             Lift Your Heart in Worship
@@ -77,7 +76,7 @@ export default function ExaltContent({
             href="/"
             className={
               publicSans.className +
-              " inline-flex items-center justify-center mt-16 rounded-full border border-white/40 px-6 py-3 text-xs hover:bg-white/20 transition"
+              " inline-flex items-center justify-center mt-8 rounded-full border border-white/40 px-6 py-3 text-xs hover:bg-white/20 transition"
             }
           >
             Explore More Moments

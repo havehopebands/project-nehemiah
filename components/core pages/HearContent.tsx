@@ -13,7 +13,20 @@ type HearContentProps = {
 
 export default function HearContent({ hear }: HearContentProps) {
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-center px-6 text-white overflow-hidden">
+    <main 
+        className="
+        relative 
+        flex 
+        h-dvh
+        flex-col 
+        items-center 
+        justify-center 
+        px-6
+        py-8
+        text-white 
+        overflow-hidden
+        "
+      >
 
     <BackgroundVideo
         video="/videos/hear.webm"
@@ -24,7 +37,7 @@ export default function HearContent({ hear }: HearContentProps) {
       {/* Content */}
     <Reveal duration={1.6}>
         <h2
-           className={greatVibes.className + " w-full text-center text-5xl sm:text-6xl md:text-7xl leading-tight tracking-tight mb-16"}
+           className={greatVibes.className + " w-full text-center text-[clamp(2.75rem,8vw,4.5rem)] leading-tight tracking-tight mb-16"}
 >
           God’s Word for You Today
         </h2>
@@ -35,11 +48,11 @@ export default function HearContent({ hear }: HearContentProps) {
          
 
    
-        <p className= {redHatDisplay.className + " text-lg font-semibold mb-6"}>
+        <p className= {redHatDisplay.className + " text-[clamp(1.5rem,5vw,2.25rem)] font-semibold mb-6"}>
           {hear.verseReference}
         </p>
 
-        <p className= {publicSans.className + " text-2xl md:text-3xl leading-relaxed italic"}>
+        <p className= {publicSans.className + " text-[clamp(1.25rem,4.5vw,1.875rem)] leading-relaxed italic"}>
           "{hear.verseText}"
         </p>
 

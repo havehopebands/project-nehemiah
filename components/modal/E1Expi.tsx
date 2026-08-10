@@ -13,7 +13,7 @@ export default function E1Expi() {
             "
         >
             <Image
-                src="/images/e1-expi.png"
+                src="/images/e1-expi.webp"
                 alt=""
                 fill
                 priority

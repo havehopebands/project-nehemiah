@@ -1,10 +1,8 @@
-import CorePage from "@/components/CorePage";
+import ObserveContent from "@/components/core pages/ObserveContent";
 
 export default function Page() {
   return (
-    <CorePage
-      title="OASIS"
-      subtitle="This Hope In Each Moment page is being prepared."
-    />
-  );
-}
+    <ObserveContent
+        />
+      );
+    }

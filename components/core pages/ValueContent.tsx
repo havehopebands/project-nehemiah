@@ -60,14 +60,7 @@ export default function ValueContent({ value }: ValueContentProps) {
         </div>
       </Reveal>
 
-      <Reveal delay={3.0}>
-        <Link
-          href="/"
-          className="inline-block mt-16 rounded-full border border-white/40 px-4 py-2 text-xs md:px-6 md:py-3 md:text-base hover:bg-white/20 transition"
-        >
-          Explore More Moments
-        </Link>
-      </Reveal>
+    
 
     </main>
   );

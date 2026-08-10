@@ -1,10 +1,8 @@
-import CorePage from "@/components/CorePage";
+import EmbarkContent from "@/components/core pages/EmbarkContent";
 
 export default function Page() {
   return (
-    <CorePage
-      title="EMBARK"
-      subtitle="This Hope In Each Moment page is being prepared."
+    <EmbarkContent
     />
   );
 }

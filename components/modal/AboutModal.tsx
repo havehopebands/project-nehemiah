@@ -60,7 +60,7 @@ export default function AboutModal() {
                             " text-5xl md:text-6xl font-semibold tracking-wide text-[#C1A048]"
                         }
                     >
-                        The Story Behind
+                        Our Story
                     </h1>       
             
                     <div className="mt-8 w-full max-w-3xl">

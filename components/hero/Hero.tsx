@@ -15,7 +15,8 @@ import {
     jasper,
     spaceGrotesk,
     techb,
-    alumniSansSC
+    alumniSansSC,
+    redHatDisplay
     } from "@/lib/fonts";
 
 
@@ -84,7 +85,7 @@ export default function Hero() {
           <p
               className={
                   alumniSansSC.className +
-                  " text-xl md:text-5xl font-medium tracking-[0.12em] "
+                  " text-[clamp(1.75rem,4vw,3rem)] font-medium tracking-[0.12em] "
               }
           >
               One wristband. 
@@ -106,38 +107,42 @@ export default function Hero() {
                   py-12
 
                   flex
+                  flex-col
+                  items-center
                   justify-center
               "
           >
+              <p
+                  className={
+                      redHatDisplay.className +
+                      `
+                      text-[clamp(1rem,2.5vw,1.4rem)]
+                      tracking-[0.15em]
+                      text-white/70
+                      `
+                  }
+              >
+                  Click on the wristband to interact
+              </p>
+              
               <Link
                   href="/experience"
-                  className="
-                      rounded-full
-
-                      border
-                      border-white/10
-
-                      bg-white/5
-                      backdrop-blur-md
-
-                      px-8
-                      py-4
-
-                      text-sm
-                      tracking-[0.2em]
-                      uppercase
-
-                      text-white/70
-
-                      transition-all
-                      duration-300
-
-                      hover:bg-white/10
-                      hover:text-white
-                  "
               >
-                  Explore the Wristband
+                  <Image
+                      src="/images/slow-float-loop.webp"
+                      alt="Explore the wristband"
+                      width={960}
+                      height={540}
+                      priority
+                      className="
+                          mt-6
+                          w-[clamp(16rem,70vw,30rem)]
+                          h-auto
+                          object-contain
+                      "
+                  />
               </Link>
+
           </section>
 
           

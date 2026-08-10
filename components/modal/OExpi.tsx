@@ -8,12 +8,12 @@ export default function OExpi() {
         <main
             className="
                 relative
-                h-dvh
+                h-full
                 overflow-hidden
             "
         >
             <Image
-                src="/images/tempo-expi.png"
+                src="/images/o-expi.webp"
                 alt=""
                 fill
                 priority

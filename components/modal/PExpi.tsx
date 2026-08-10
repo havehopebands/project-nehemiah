@@ -8,12 +8,12 @@ export default function PExpi() {
         <main
             className="
                 relative
-                h-dvh
+                h-full
                 overflow-hidden
             "
         >
             <Image
-                src="/images/tempo-expi.png"
+                src="/images/p-expi.webp"
                 alt=""
                 fill
                 priority

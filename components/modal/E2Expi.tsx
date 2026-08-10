@@ -8,12 +8,12 @@ export default function E2Expi() {
         <main
             className="
                 relative
-                h-dvh
+                h-full
                 overflow-hidden
             "
         >
             <Image
-                src="/images/tempo-expi.png"
+                src="/images/e2-expi.webp"
                 alt=""
                 fill
                 priority

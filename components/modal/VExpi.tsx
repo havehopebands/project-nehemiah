@@ -13,7 +13,7 @@ export default function VExpi() {
             "
         >
             <Image
-                src="/images/v-expi.png"
+                src="/images/v-expi.webp"
                 alt=""
                 fill
                 priority

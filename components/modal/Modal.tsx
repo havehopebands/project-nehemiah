@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 type ModalProps = {
     isOpen: boolean;
@@ -8,25 +8,36 @@ type ModalProps = {
     children: React.ReactNode;
 };
 
+
+
 export default function Modal({
     isOpen,
     onClose,
     children,
 }: ModalProps) {
-    useEffect(() => {
-        if (!isOpen) {
-            document.body.style.overflow = "";
-            return;
-        }
 
+    const [isVisible, setIsVisible] = useState(false);
+    useEffect(() => {
+    if (isOpen) {
+        setIsVisible(true);
         document.body.style.overflow = "hidden";
 
-        return () => {
-            document.body.style.overflow = "";
-        };
-    }, [isOpen]);
+        return;
+    }
 
-    if (!isOpen) return null;
+    document.body.style.overflow = "";
+
+    const timeout = setTimeout(() => {
+        setIsVisible(false);
+    }, 250);
+
+    return () => {
+        clearTimeout(timeout);
+        document.body.style.overflow = "";
+    };
+}, [isOpen]);
+
+    if (!isVisible) return null;
 
 
     return (
@@ -39,7 +50,7 @@ export default function Modal({
 
     <div
         
-        className="
+        className={`
             fixed
             inset-0
             z-50
@@ -49,7 +60,12 @@ export default function Modal({
             bg-black/60
             backdrop-blur-sm
             p-4
-        "
+
+            transition-opacity
+            duration-300
+
+            isOpen ? "opacity-100" : "opacity-0"
+        `}
     >
 
 {/* ======================================================
@@ -111,12 +127,12 @@ export default function Modal({
                             items-center
                             justify-center
                             rounded-full
-                            bg-black/10
-                            text-neutral-900
+                            bg-black/40
+                            text-white
                             backdrop-blur-sm
                             transition
-                            hover:bg-black/20
-                            hover:text-neutral-500
+                            hover:bg-black/60
+                            hover:text-white
                         "
                         aria-label="Close modal"
                     >

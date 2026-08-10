@@ -74,7 +74,7 @@ export default function ProductFilm() {
                     duration-300
                 "
             >
-                Click the teaser to watch the full product film.
+                Click to watch the story unfold.
             </p>
  
         <AnimatePresence>

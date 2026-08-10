@@ -71,17 +71,7 @@ export default function ExaltContent({
           </GlassCard>
         </Reveal>
 
-        <Reveal delay={3.0}>
-          <Link
-            href="/"
-            className={
-              publicSans.className +
-              " inline-flex items-center justify-center mt-8 rounded-full border border-white/40 px-6 py-3 text-xs hover:bg-white/20 transition"
-            }
-          >
-            Explore More Moments
-          </Link>
-        </Reveal>
+       
 
       </div>
 

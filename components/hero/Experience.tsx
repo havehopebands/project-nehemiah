@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { quicksand } from "@/lib/fonts";
 import BackgroundVideo from "@/components/BackgroundVideo";
 import BraceletViewer from "./BraceletViewer";
@@ -12,6 +13,7 @@ import H2Expi from "@/components/modal/H2Expi";
 import OExpi from "@/components/modal/OExpi";
 import PExpi from "@/components/modal/PExpi";
 import E2Expi from "@/components/modal/E2Expi";
+
 
 import {
     useEffect,
@@ -304,7 +306,26 @@ export default function Experience() {
 
                     </div>
 
-                    
+                <Link
+                    href="/"
+                    className="
+                        absolute
+                        bottom-6
+                        left-1/2
+                        -translate-x-1/2
+
+                        text-white/80
+                        hover:text-white
+
+                        text-[clamp(0.8rem,2vw,1.1rem)]
+
+                        font-medium
+
+                        transition
+                    "
+                >
+                    HOME
+                </Link>   
 
             </div>    
 

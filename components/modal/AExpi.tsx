@@ -13,7 +13,7 @@ export default function AExpi() {
             "
         >
             <Image
-                src="/images/a-expi.png"
+                src="/images/a2-expi.webp"
                 alt=""
                 fill
                 priority

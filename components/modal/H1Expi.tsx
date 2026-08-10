@@ -13,7 +13,7 @@ export default function H1Expi() {
             "
         >
             <Image
-                src="/images/h1-expi.png"
+                src="/images/h1-expi.webp"
                 alt=""
                 fill
                 priority

@@ -60,7 +60,7 @@ export default function HeedContent() {
                 ${greatVibes.className}
                 max-w-4xl
                 text-center
-                text-[clamp(2.25rem,7vw,4.5rem)]
+                text-[clamp(2.75rem,7vw,4.5rem)]
                 leading-tight
             `}
             >

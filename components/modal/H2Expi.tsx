@@ -8,12 +8,12 @@ export default function H2Expi() {
         <main
             className="
                 relative
-                h-dvh
+                h-full
                 overflow-hidden
             "
         >
             <Image
-                src="/images/h2-expi.png"
+                src="/images/h2-expi.webp"
                 alt=""
                 fill
                 priority

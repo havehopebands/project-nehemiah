@@ -1,10 +1,8 @@
-import CorePage from "@/components/CorePage";
+import PrayContent from "@/components/core pages/PrayContent";
 
 export default function Page() {
   return (
-    <CorePage
-      title="PRAY"
-      subtitle="This Hope In Each Moment page is being prepared."
-    />
-  );
-}
+    <PrayContent
+        />
+      );
+    }

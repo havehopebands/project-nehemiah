@@ -9,7 +9,7 @@ import Modal from "@/components/modal/Modal";
 import CommitmentModal from "@/components/modal/CommitmentModal";
 import AboutModal from "@/components/modal/AboutModal";
 import PursuitModal from "@/components/modal/PursuitModal";
-
+import SupportModal from "@/components/modal/SupportModal";
 
 export default function Header() {
 
@@ -19,6 +19,7 @@ export default function Header() {
     const [isCommitmentOpen, setIsCommitmentOpen] = useState(false);
     const [isAboutOpen, setIsAboutOpen] = useState(false);
     const [isPursuitOpen, setIsPursuitOpen] = useState(false);
+    const [isSupportOpen, setIsSupportOpen] = useState(false);
 
     const navItems = [
             {
@@ -184,6 +185,8 @@ export default function Header() {
                                     setIsAboutOpen(true);
                                 } else if (item.label === "Our Pursuit") {
                                     setIsPursuitOpen(true);
+                                } else if (item.label === "Your Support") {
+                                    setIsSupportOpen(true);
                                 }
                             }}
                             className="nav-link"
@@ -259,6 +262,8 @@ export default function Header() {
                                                 setIsAboutOpen(true);
                                             } else if (item.label === "Our Pursuit") {
                                                 setIsPursuitOpen(true);
+                                            } else if (item.label === "Your Support") {
+                                                setIsSupportOpen(true);
                                             }
                                             
                                         }}
@@ -306,6 +311,13 @@ export default function Header() {
     onClose={() => setIsPursuitOpen(false)}
 >
     <PursuitModal />
+</Modal>
+
+<Modal
+    isOpen={isSupportOpen}
+    onClose={() => setIsSupportOpen(false)}
+>
+    <SupportModal />
 </Modal>
 
 </>

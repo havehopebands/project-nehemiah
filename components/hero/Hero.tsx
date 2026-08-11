@@ -122,25 +122,29 @@ export default function Hero() {
                       `
                   }
               >
-                  Click on the wristband to interact
+                  Click on the interactive wristband to explore
               </p>
               
               <Link
                   href="/experience"
               >
-                  <Image
-                      src="/images/slow-float-loop.webp"
-                      alt="Explore the wristband"
-                      width={960}
-                      height={540}
-                      priority
-                      className="
-                          mt-6
-                          w-[clamp(16rem,70vw,30rem)]
-                          h-auto
-                          object-contain
-                      "
-                  />
+                    <picture>
+                        <source
+                            media="(max-width: 767px)"
+                            srcSet="/images/slow-float-loop-mobile.webp"
+                        />
+
+                        <img
+                            src="/images/slow-float-loop.webp"
+                            alt="Explore the wristband"
+                            className="
+                                mt-6
+                                w-[clamp(16rem,70vw,30rem)]
+                                h-auto
+                                object-contain
+                            "
+                        />
+                    </picture>
               </Link>
 
           </section>

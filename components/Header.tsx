@@ -8,7 +8,7 @@ import CallingModal from "@/components/modal/CallingModal";
 import Modal from "@/components/modal/Modal";
 import CommitmentModal from "@/components/modal/CommitmentModal";
 import AboutModal from "@/components/modal/AboutModal";
-
+import PursuitModal from "@/components/modal/PursuitModal";
 
 
 export default function Header() {
@@ -18,6 +18,7 @@ export default function Header() {
     const [isCallingOpen, setIsCallingOpen] = useState(false);
     const [isCommitmentOpen, setIsCommitmentOpen] = useState(false);
     const [isAboutOpen, setIsAboutOpen] = useState(false);
+    const [isPursuitOpen, setIsPursuitOpen] = useState(false);
 
     const navItems = [
             {
@@ -181,6 +182,8 @@ export default function Header() {
                                     setIsCommitmentOpen(true);
                                 } else if (item.label === "Our Story") {
                                     setIsAboutOpen(true);
+                                } else if (item.label === "Our Pursuit") {
+                                    setIsPursuitOpen(true);
                                 }
                             }}
                             className="nav-link"
@@ -254,6 +257,8 @@ export default function Header() {
                                                 setIsCommitmentOpen(true);
                                             } else if (item.label === "Our Story") {
                                                 setIsAboutOpen(true);
+                                            } else if (item.label === "Our Pursuit") {
+                                                setIsPursuitOpen(true);
                                             }
                                             
                                         }}
@@ -294,6 +299,13 @@ export default function Header() {
     onClose={() => setIsAboutOpen(false)}
 >
     <AboutModal />
+</Modal>
+
+<Modal
+    isOpen={isPursuitOpen}
+    onClose={() => setIsPursuitOpen(false)}
+>
+    <PursuitModal />
 </Modal>
 
 </>

@@ -119,7 +119,7 @@ export default function Header() {
                     transition-all
                     duration-300
                     hover:bg-white/10
-                    lg:hidden
+                    xl:hidden
                     "
                 >
                 {mobileMenuOpen ? (
@@ -165,11 +165,11 @@ export default function Header() {
             <nav
             className={`${redHatDisplay.className} 
                     hidden 
-                    lg:flex 
+                    xl:flex 
                     items-center 
                     gap-12 
-                    text-sm 
-                    font-medium 
+                    text-[clamp(0.9rem,1.2vw,1.1rem)]
+                    font-semibold
                     tracking-wide`}
                     >
 
@@ -189,7 +189,13 @@ export default function Header() {
                                     setIsSupportOpen(true);
                                 }
                             }}
-                            className="nav-link"
+                            className="
+                                    nav-link
+                                    text-neutral-900
+                                    hover:text-neutral-700
+                                    transition-colors
+                                    duration-300
+                                "
                         >
                             {item.label}
                         </button>

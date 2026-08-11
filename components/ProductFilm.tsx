@@ -68,7 +68,7 @@ export default function ProductFilm() {
 
                     tracking-wide
 
-                    text-white/60
+                    text-black/80
 
                     transition-colors
                     duration-300

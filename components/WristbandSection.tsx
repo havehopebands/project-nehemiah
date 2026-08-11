@@ -27,7 +27,7 @@ export default function WristbandSection() {
           border
           border-white/10
 
-          bg-white/5
+          bg-black/45
           backdrop-blur-md
 
           px-8

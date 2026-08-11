@@ -56,12 +56,12 @@ export default function Hero() {
     muted
     playsInline
   >
-    <source src="/images/mountains-3.webm" type="video/webm" />
+    <source src="/images/abstract-2.webm" type="video/webm" />
   </video>
 </div>
 
   {/* Overlay */}
-  <div className="fixed inset-0 bg-black/60 -z-10">
+  <div className="fixed inset-0 bg-black/20 -z-10">
   </div>
 
 
@@ -85,7 +85,7 @@ export default function Hero() {
           <p
               className={
                   alumniSansSC.className +
-                  " text-[clamp(1.75rem,4vw,3rem)] font-medium tracking-[0.12em] "
+                  " text-[clamp(1.75rem,4vw,3rem)] font-medium tracking-[0.12em] text-black"
               }
           >
               One wristband. 
@@ -118,7 +118,7 @@ export default function Hero() {
                       `
                       text-[clamp(1rem,2.5vw,1.4rem)]
                       tracking-[0.15em]
-                      text-white/70
+                      text-black/70
                       `
                   }
               >
@@ -161,7 +161,7 @@ export default function Hero() {
      </div>
 
 <a
-  href="https://www.vecteezy.com/free-videos/mountain"
+  href="https://www.vecteezy.com/free-videos/abstract-background"
   target="_blank"
   rel="noopener noreferrer"
   className="
@@ -176,7 +176,7 @@ export default function Hero() {
          text-white/30
          hover:text-white/70"
 >
-  Mountain Stock Videos by Vecteezy
+  Abstract Background Stock Videos by Vecteezy
 </a>
 
 

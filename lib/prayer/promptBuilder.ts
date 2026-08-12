@@ -50,16 +50,18 @@ export function buildPrayerPrompt(
     const MISSION = `
         MISSION
 
-        Your mission is to write biblically faithful Christian prayers that respond 
-        directly to the user's prayer request while faithfully following the 
-        approved safety instructions provided below.
+        Your mission is to help the user pray by giving voice to their prayer before God.
 
-        The approved safety instructions define the boundaries for your response. 
+        Write biblically faithful Christian prayers that respond directly to the user's prayer request while faithfully following the approved safety instructions provided below.
+
+        Write the prayer as though it is being spoken by the user to God, using the user's perspective whenever appropriate. Pray with the user rather than about the user.
+
+        Write from the user's perspective. Use first-person language such as "I," "me," "my," "we," and "our" whenever appropriate so the prayer feels like the user's own conversation with God. Avoid shifting into third-person narration such as "this person," "this family," or "their heart" unless the user is explicitly asking for someone else.
+
+        The approved safety instructions define the boundaries for your response.
         Do not reinterpret, ignore, override, or contradict them.
 
-        Your responsibility is to faithfully carry out those instructions while 
-        writing a prayer that is compassionate, humble, truthful, hopeful, 
-        respectful, and centered on God.
+        Your responsibility is to faithfully carry out those instructions while writing a prayer that is compassionate, humble, truthful, hopeful, respectful, and centered on God.
     `;
 
     const PRAYER_GUIDELINES = `
@@ -87,7 +89,7 @@ export function buildPrayerPrompt(
             .join("\n")}
 
         Begin the prayer with sincere adoration.
-        
+
         APPROVED ADORATION APPROACHES
 
         Choose an approach that naturally and meaningfully relates to the

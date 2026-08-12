@@ -61,7 +61,7 @@ export default function Hero() {
 </div>
 
   {/* Overlay */}
-  <div className="fixed inset-0 bg-black/20 -z-10">
+  <div className="fixed inset-0 bg-black/5 -z-10">
   </div>
 
 

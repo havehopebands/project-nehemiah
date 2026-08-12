@@ -1,0 +1,1 @@
+export const THANKSGIVING_VARIANTS = [];

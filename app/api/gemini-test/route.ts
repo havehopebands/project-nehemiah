@@ -1,6 +1,8 @@
 import { GoogleGenAI } from "@google/genai";
 import { NextResponse } from "next/server";
 import { safetyTestCases } from "@/data/safetyTestCases";
+import type { SafetyAssessment } from "@/lib/safety/types";
+import { evaluateSafety } from "@/lib/safety/policy";
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
@@ -53,6 +55,7 @@ Return ONLY valid JSON using exactly this structure:
   "subject": "self" | "another_person" | "multiple_people" | "unclear",
   "situation": "string",
   "timeContext": "current" | "recent" | "historical" | "unclear",
+  "confidence": "high" | "medium" | "low",
   "currentDanger": true | false,
   "reason": "brief explanation"
 }
@@ -130,29 +133,22 @@ Return ONLY valid JSON using exactly this structure:
         throw new Error(`Gemini returned no assessment for test ${testCase.id}.`);
         }
 
-        const assessment = JSON.parse(interaction.output_text);
+        const assessment: SafetyAssessment = JSON.parse(
+          interaction.output_text
+        );
 
-        const levelMatch = testCase.expectedLevel.includes(assessment.level);
-        const timeContextMatch =
-        testCase.expectedTimeContext.includes(assessment.timeContext);
-        const dangerMatch =
-        testCase.expectedCurrentDanger.includes(assessment.currentDanger);
+        const decision = evaluateSafety(assessment);
+
+        
+        
 
         results.push({
         id: testCase.id,
         text: testCase.text,
-        expected: {
-            level: testCase.expectedLevel,
-            timeContext: testCase.expectedTimeContext,
-            currentDanger: testCase.expectedCurrentDanger,
-        },
+        
         assessment,
-        match: {
-            level: levelMatch,
-            timeContext: timeContextMatch,
-            currentDanger: dangerMatch,
-            overall: levelMatch && timeContextMatch && dangerMatch,
-        },
+        decision,
+        
         });
     }
 

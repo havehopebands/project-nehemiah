@@ -1,7 +1,34 @@
-import { greatVibes, redHatDisplay } from "@/lib/fonts";
+"use client";
+
+import { useState } from "react";
+
+import { greatVibes, publicSans, redHatDisplay } from "@/lib/fonts";
 import GlassCard from "@/components/GlassCard";
 
+
 export default function PrayContent() {
+
+    const [userRequest, setUserRequest] = useState("");
+
+    const [prayer, setPrayer] = useState("");
+
+    async function handlePray() {
+        const response = await fetch("/api/pray/generate", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                userRequest,
+            }),
+        });
+
+            const data = await response.json();
+
+            setPrayer(data.prayer);
+    }
+
+
     return (
 
         /* Background video */
@@ -98,24 +125,48 @@ export default function PrayContent() {
                                 "
                             >
 
-                                <div
-                                    className={`
-                                        ${redHatDisplay.className}
-                                        flex
-                                        flex-col
-                                        items-center
-                                        gap-3
-                                        text-[clamp(1.15rem,5vw,1.5rem)]
-                                    `}
-                                >
-                                    <span>Type in</span>
+                                {prayer ? (
+                                    <div
+                                        className={`
+                                            ${redHatDisplay.className}
+                                            max-h-[50dvh]
+                                            w-full
+                                            overflow-y-auto
+                                            [-ms-overflow-style:none]
+                                            [scrollbar-width:none]
+                                            [&::-webkit-scrollbar]:hidden
+                                            px-5
+                                            text-left
+                                            text-[clamp(1rem,3vw,1.05rem)]
+                                            leading-relaxed
+                                            text-white
+                                        `}
+                                    >
+                                        {prayer}
+                                    </div>
+                                ) : (
+                                    <div className="w-full px-5">
 
-                                    <span>your</span>
+                                        <textarea
+                                            value={userRequest}
+                                            onChange={(e) => setUserRequest(e.target.value)}
+                                            placeholder="Share your heart with God..."
+                                            className={`
+                                                ${redHatDisplay.className}
+                                                h-40
+                                                w-full
+                                                resize-none
+                                                bg-transparent
+                                                p-2
+                                                text-[clamp(1rem,3vw,1.05rem)]
+                                                text-white
+                                                placeholder:text-white/50
+                                                outline-none
+                                            `}
+                                        />
 
-                                    <span>prayer</span>
-
-                                    <span>concerns.</span>
-                                </div>
+                                    </div>
+                                )}
 
                             </div>
 
@@ -123,6 +174,33 @@ export default function PrayContent() {
                     </div>
 
                 </div>
+                
+                <button
+                    onClick={handlePray}
+                    className={`
+                        ${redHatDisplay.className}
+                        rounded-full
+                        border
+                        border-white/25
+                        bg-white/10
+                        px-8
+                        py-3
+                        text-[clamp(0.95rem,3vw,1rem)]
+                        font-medium
+                        tracking-wide
+                        text-white
+                        backdrop-blur-md
+                        transition-all
+                        duration-200
+                        hover:bg-white/15
+                        hover:border-white/40
+                        active:scale-95
+                    `}
+                >
+                    Let us pray
+                </button>
+
+
 
             </div>
 

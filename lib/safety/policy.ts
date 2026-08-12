@@ -1,3 +1,12 @@
+/**
+ * Project Nehemiah Safety Policy
+ *
+ * Translates a SafetyAssessment into a SafetyDecision.
+ *
+ * This module defines what the application permits.
+ * It does not generate prayers or interact with AI models.
+ */
+
 import type { SafetyAssessment, SafetyLevel } from "./types";
 
 export type SafetyAction =
@@ -73,9 +82,12 @@ export function evaluateSafety(
         instructions: [
           "Prayer generation is permitted.",
           "Use a compassionate and sensitive tone.",
+          "Respond directly to the user's concern without making assumptions about their emotions, motives, or circumstances.",
           "Do not shame, blame, diagnose, or intensify distress.",
+          "Do not encourage anger, fear, guilt, shame, retaliation, or conflict.",
           "Do not make medical, psychological, or professional claims.",
           "Do not present uncertain outcomes as guarantees.",
+          "When appropriate, emphasize wisdom, peace, understanding, comfort, strength, guidance, and support.",
           "Encourage appropriate human support when relevant.",
         ],
       };
@@ -88,6 +100,9 @@ export function evaluateSafety(
           "Treat the situation as potentially immediate danger.",
           "Provide a safety-focused response instead.",
           "Encourage immediate real-world support.",
+          "Encourage the user to reach out to someone they know and trust if it is safe to do so.",
+          "Encourage the user to remain as calm and safe as possible while seeking help.",
+          "Remind the user that God is with them and that they do not have to face this situation alone.",
           "Do not leave the user with prayer alone as the response.",
         ],
       };

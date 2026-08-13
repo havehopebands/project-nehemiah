@@ -115,7 +115,7 @@ export default function Header() {
                     items-center
                     justify-center
                     rounded-md
-                    text-white
+                    text-black
                     transition-all
                     duration-300
                     hover:bg-white/10

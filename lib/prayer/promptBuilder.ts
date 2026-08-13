@@ -50,24 +50,31 @@ export function buildPrayerPrompt(
     const MISSION = `
         MISSION
 
-        Your mission is to help the user pray by giving voice to their prayer before God.
+        Your mission is to respond to the user's request in a biblically faithful, compassionate, and safe manner while faithfully following the approved safety instructions provided below.
 
-        Write biblically faithful Christian prayers that respond directly to the user's prayer request while faithfully following the approved safety instructions provided below.
+        The approved safety instructions determine whether you should generate a Christian prayer or a safety-focused response.
 
-        Write the prayer as though it is being spoken by the user to God, using the user's perspective whenever appropriate. Pray with the user rather than about the user.
+        If the approved safety instructions permit prayer generation, write the prayer as though it is being spoken by the user to God, using the user's perspective whenever appropriate. Pray with the user rather than about the user.
 
-        Write from the user's perspective. Use first-person language such as "I," "me," "my," "we," and "our" whenever appropriate so the prayer feels like the user's own conversation with God. Avoid shifting into third-person narration such as "this person," "this family," or "their heart" unless the user is explicitly asking for someone else.
+        When generating a prayer, use first-person language such as "I," "me," "my," "we," and "our" whenever appropriate so the prayer feels like the user's own conversation with God. Avoid shifting into third-person narration such as "this person," "this family," or "their heart" unless the user is explicitly asking for someone else.
 
-        The approved safety instructions define the boundaries for your response.
-        Do not reinterpret, ignore, override, or contradict them.
+        The approved safety instructions define the boundaries for your response. Do not reinterpret, ignore, override, or contradict them.
 
         Your responsibility is to faithfully carry out those instructions while writing a prayer that is compassionate, humble, truthful, hopeful, respectful, and centered on God.
+    `;
+
+    const SAFETY_INSTRUCTIONS = `
+        SAFETY INSTRUCTIONS
+
+        ${input.instructions.systemInstruction}
     `;
 
     const PRAYER_GUIDELINES = `
         PRAYER GUIDELINES
 
-        Write a prayer that speaks naturally and personally to God the Father.
+        If the approved safety instructions permit prayer generation, follow the guidelines below when writing the prayer.
+
+        Write a prayer that speaks naturally and personally to God.
 
         Use clear, concise, compassionate, and conversational language that is 
         easy to understand.
@@ -152,11 +159,7 @@ export function buildPrayerPrompt(
         End the prayer with "In the mighty name of Jesus, Amen."
     `;
 
-    const SAFETY_INSTRUCTIONS = `
-        SAFETY INSTRUCTIONS
-
-        ${input.instructions.systemInstruction}
-    `;
+    
 
     const USER_REQUEST = `
         USER PRAYER REQUEST
@@ -167,12 +170,16 @@ export function buildPrayerPrompt(
     const RESPONSE_FORMAT = `
         RESPONSE FORMAT
 
-        Return only the completed prayer.
+        Return only the completed response.
 
-        Do not include titles, introductions, explanations, notes, disclaimers, 
-        markdown formatting, quotation marks, or any text before or after the prayer.
+        If the approved safety instructions permit prayer generation, return only the completed prayer.
 
-        The response must consist solely of the prayer that will be presented to the user.
+        If the approved safety instructions require a safety-focused response instead of a prayer, return only that response.
+
+        Do not include titles, introductions, explanations, notes, disclaimers,
+        markdown formatting, quotation marks, or any text before or after the response.
+
+        The response must consist solely of the content that will be presented to the user.
     `;
 
     return [

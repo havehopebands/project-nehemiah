@@ -22,53 +22,39 @@ export type SafetyDecision = {
   action: SafetyAction;
   prayerMode: PrayerMode;
   allowGeneration: boolean;
+  dangerType: SafetyAssessment["dangerType"];
   instructions: string[];
 };
 
 const SAFETY_POLICIES: Record<
-  SafetyLevel,
+  1 | 2,
   Omit<SafetyDecision, "instructions">
 > = {
   1: {
     action: "ALLOW_PRAYER",
     prayerMode: "NORMAL",
     allowGeneration: true,
+    dangerType: null,
   },
 
   2: {
     action: "ALLOW_PRAYER",
     prayerMode: "SENSITIVE",
     allowGeneration: true,
+    dangerType: null,
   },
 
-  3: {
-    action: "BLOCK_PRAYER",
-    prayerMode: "IMMEDIATE_DANGER",
-    allowGeneration: false,
-  },
 };
 
 export function evaluateSafety(
   assessment: SafetyAssessment
 ): SafetyDecision {
-  const policy = SAFETY_POLICIES[assessment.level];
-
-  if (!policy) {
-    return {
-      action: "BLOCK_PRAYER",
-      prayerMode: "IMMEDIATE_DANGER",
-      allowGeneration: false,
-      instructions: [
-        "Do not generate a prayer.",
-        "Use the safest available fallback response.",
-      ],
-    };
-  }
+  
 
   switch (assessment.level) {
     case 1:
       return {
-        ...policy,
+        ...SAFETY_POLICIES[1],
         instructions: [
           "Prayer generation is permitted.",
           "Use a normal compassionate prayer style.",
@@ -78,7 +64,7 @@ export function evaluateSafety(
 
     case 2:
       return {
-        ...policy,
+        ...SAFETY_POLICIES[2],
         instructions: [
           "Prayer generation is permitted.",
           "Use a compassionate and sensitive tone.",
@@ -94,7 +80,10 @@ export function evaluateSafety(
 
     case 3:
       return {
-        ...policy,
+        action: "BLOCK_PRAYER",
+        prayerMode: "IMMEDIATE_DANGER",
+        allowGeneration: false,
+        dangerType: assessment.dangerType,
         instructions: [
           "Do not generate a normal prayer.",
           "Treat the situation as potentially immediate danger.",
@@ -112,6 +101,7 @@ export function evaluateSafety(
         action: "BLOCK_PRAYER",
         prayerMode: "IMMEDIATE_DANGER",
         allowGeneration: false,
+        dangerType: null,
         instructions: [
           "Do not generate a prayer.",
           "Use the safest available fallback response.",

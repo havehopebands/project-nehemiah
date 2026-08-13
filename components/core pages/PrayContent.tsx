@@ -25,7 +25,7 @@ export default function PrayContent() {
 
             const data = await response.json();
 
-            setPrayer(data.prayer);
+            setPrayer(data.response);
     }
 
 

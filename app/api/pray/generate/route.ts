@@ -17,48 +17,62 @@ import { NextResponse } from "next/server";
 
 import { buildPrayerPrompt } from "@/lib/prayer/promptBuilder";
 import { buildPrayerInstructions } from "@/lib/safety/instructions";
+import { assessSafety } from "@/lib/safety/assessor";
 import { evaluateSafety } from "@/lib/safety/policy";
-import type { SafetyAssessment } from "@/lib/safety/types";
+import { logSafetyAssessment } from "@/lib/safety/logger";
 
     const ai = new GoogleGenAI({
     apiKey: process.env.GEMINI_API_KEY,
     });
 
         export async function POST(request: Request) {
-            const { userRequest } = await request.json();
+            try {
+                const { userRequest } = await request.json();
 
-            const assessment: SafetyAssessment = {
-                level: 2,
-                subject: "another_person",
-                situation: "Concern about ongoing conflict between parents.",
-                timeContext: "current",
-                currentDanger: false,
-                confidence: "high",
-                reason: "Temporary test assessment.",
-            };
+                const assessment = await assessSafety(userRequest);
 
-            const decision = evaluateSafety(assessment);
+                const decision = evaluateSafety(assessment);
 
-            const instructions = buildPrayerInstructions(decision);
+                await logSafetyAssessment(assessment, decision);
 
-            const prompt = buildPrayerPrompt({
-                userRequest,
-                instructions,
-            });
+                const instructions = buildPrayerInstructions(decision);
 
-            const interaction = await ai.interactions.create({
-                model: "gemini-3.5-flash-lite",
-                input: prompt,
-                store: false,
-            });
+                const prompt = buildPrayerPrompt({
+                    userRequest,
+                    instructions,
+                });
 
-                if (!interaction.output_text) {
-                throw new Error("Gemini did not return a prayer.");
-            }
+                const interaction = await ai.interactions.create({
+                    model: "gemini-3.5-flash-lite",
+                    input: prompt,
+                    store: false,
+                });
 
-            return NextResponse.json({
-                success: true,
-                prayer: interaction.output_text,
-        });
+                    if (!interaction.output_text) {
+                    throw new Error("Gemini did not return a response.");
+                }
+
+                return NextResponse.json({
+                    success: true,
+                    response: interaction.output_text,
+                });
+
+                } catch (error) {
+                    console.error("Prayer generation failed:", error);
+
+                    return NextResponse.json(
+                        {
+                            success: false,
+                            message:
+                            "We're sorry, the system is currently busy. Please try again in a moment.",
+                        },
+                        {
+                            status: 500,
+                        }
+                    );
+                }
+                
+
+        
 }
 

@@ -1,10 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 
-console.log("SUPABASE URL:", process.env.NEXT_PUBLIC_SUPABASE_URL);
-console.log(
-  "SUPABASE SECRET KEY EXISTS:",
-  !!process.env.SUPABASE_SECRET_KEY
-);
+
 
 export const supabase = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,

@@ -42,7 +42,6 @@ export const alumniSansSC = Alumni_Sans_SC({
 
 export const quicksand = Quicksand({
     subsets: ["latin"],
-    weight: ["400", "500", "600", "700"],
 });
 
 // =========================

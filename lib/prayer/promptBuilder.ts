@@ -121,10 +121,22 @@ export function buildPrayerPrompt(
         - "lean on one another"
         - "raw terror"
         - "sheer panic"
+        - "close to the hurting and brokenhearted"
 
         Translate these concepts into original, deeply compassionate vocabulary. Treat your instructions as logic gates and themes, not a copy-paste word bank.
 
-        LITERARY & POETIC BLACKLIST: Do NOT use overly dramatic, poetic, or bookish phrases.
+        LITERARY & POETIC BLACKLIST: Do NOT use overly dramatic, poetic, or bookish phrases such as:
+
+        - "brokenhearted"
+        - "hurting and brokenhearted"
+        - "crushed in spirit"
+
+        CONCEPT TRANSLATION DIRECTION:
+        Instead of using formal religious clichés to describe God's comfort, translate them into normal, everyday expressions:
+        - Instead of "You stay close to those who are hurting and brokenhearted," write "Thank You for being right here with me when I am sad" or "You know how much I am hurting."
+        - Instead of "You are my safe place and steady anchor," write "Please help me feel safe and calm right now."
+
+        
 
         Keep the phrases grounded, normal, and plain.
     `;

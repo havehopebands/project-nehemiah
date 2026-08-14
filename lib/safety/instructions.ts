@@ -75,7 +75,7 @@ export function buildPrayerInstructions(
     return {
       systemInstruction: [
         "Begin by quietly acknowledging the user's specific worry with a gentle, slow, and calming pace.",
-        "Weave in the beautiful biblical reality of God being incredibly near to those who are hurting or brokenhearted.",
+        "Incorporate a reminder that God stays present and compassionate when people are going through times of deep sorrow, grief, pain, or suffering.",
         "Focus heavily on the Lord's character as a safe refuge, a steady anchor, and a source of profound emotional comfort.",
         "Incorporate a petition asking for wisdom, understanding, and clear guidance for the specific situation described.",
         "Gently invite a spirit of stillness and relief, praying for strength and courage to endure this difficult season.",

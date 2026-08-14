@@ -56,9 +56,12 @@ export function evaluateSafety(
       return {
         ...SAFETY_POLICIES[1],
         instructions: [
-          "Prayer generation is permitted.",
-          "Use a normal compassionate prayer style.",
-          "Respond directly to the user's prayer concern.",
+          "Permit prayer generation.",
+          "Enforce a natural, supportive prayer style.",
+          "Address only the specific user concern provided.",
+          "Do not assume, invent, or speculate about facts, intentions, or external circumstances unmentioned by the user.",
+          "Do not make medical, clinical, or professional counseling claims.",
+          "Do not present uncertain future earthly outcomes as promises or absolute guarantees from God."
         ],
       };
 
@@ -66,15 +69,14 @@ export function evaluateSafety(
       return {
         ...SAFETY_POLICIES[2],
         instructions: [
-          "Prayer generation is permitted.",
-          "Use a compassionate and sensitive tone.",
-          "Respond directly to the user's concern without making assumptions about their emotions, motives, or circumstances.",
-          "Do not shame, blame, diagnose, or intensify distress.",
-          "Do not encourage anger, fear, guilt, shame, retaliation, or conflict.",
-          "Do not make medical, psychological, or professional claims.",
-          "Do not present uncertain outcomes as guarantees.",
-          "When appropriate, emphasize wisdom, peace, understanding, comfort, strength, guidance, and support.",
-          "Encourage appropriate human support when relevant.",
+          "Permit prayer generation.",
+          "Address only the specific user concern provided.",
+          "Do not assume, invent, or speculate about facts, intentions, background stories, or relationships unexpressed by the user.",
+          "Do not attribute malicious intent, blame, or negative hidden motives to other people mentioned in the request.",
+          "Do not make medical, clinical, psychological, or professional counseling claims.",
+          "Do not present uncertain future earthly outcomes as promises or absolute guarantees from God.",
+          "Do not validate, reinforce, or escalate destructive patterns of anger, retaliation, self-shame, or terminal guilt.",
+          "Do not minimize, downplay, dismiss, or debate the severity of the user's expressed distress."
         ],
       };
 
@@ -85,14 +87,12 @@ export function evaluateSafety(
         allowGeneration: false,
         dangerType: assessment.dangerType,
         instructions: [
-          "Do not generate a normal prayer.",
-          "Treat the situation as potentially immediate danger.",
-          "Provide a safety-focused response instead.",
-          "Encourage immediate real-world support.",
-          "Encourage the user to reach out to someone they know and trust if it is safe to do so.",
-          "Encourage the user to remain as calm and safe as possible while seeking help.",
-          "Remind the user that God is with them and that they do not have to face this situation alone.",
-          "Do not leave the user with prayer alone as the response.",
+          "Halt standard prayer generation completely.",
+          "Enforce a crisis-response format focused entirely on personal safety and immediate support.",
+          "Do not make medical, psychiatric, or professional therapeutic claims.",
+          "Do not minimize, debate, or downplay the severity of the user's distress.",
+          "Do not use spiritual encouragement or prayer as a standalone response.",
+          "Require the inclusion of actionable, real-world crisis resources (e.g., helplines)."
         ],
       };
 

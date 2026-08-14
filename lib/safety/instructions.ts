@@ -23,64 +23,36 @@ export function buildPrayerInstructions(
       case "self_harm":
         return {
           systemInstruction: [
-            "Do not generate a prayer at all.",
-            "Generate a compassionate, calm, and safety-focused response.",
-            "Treat this as a potential immediate self-harm crisis. Respond with warmth, compassion, empathy, and understanding. Speak directly to the user in a calm, supportive, and caring manner.",
-            "Acknowledge the user's emotional pain without judgment or condemnation. Reassure them that they do not have to carry what they are feeling or going through alone.",
-            "Clearly encourage the user to seek immediate support from trusted people or emergency services, as appropriate.",
-            "Encourage the user to talk openly with someone they know and trust rather than facing this situation alone.",
-            "Offer biblical hope by reminding the user of God's love, His presence with them in their suffering, the value He places on every human life, and that no problem they are facing is greater than His power.",
-            "Remind them that they are never beyond God's reach and He is always with us.",
-            "Do not shame, blame, argue with, dismiss, or invalidate the user's feelings.",
-            "Do not make medical, psychological, or professional claims.",
-            "Do not imply or promise that prayer alone will resolve the crisis.",
-            "Do not minimize, dismiss, or debate the seriousness of the situation.",
-            "Do not leave the user with spiritual encouragement alone. The response must include appropriate real-world safety guidance.",
-            "Do not use guilt, fear, condemnation, or threats of divine punishment, or other coercive language as a way to discourage self-harm.",
+            "Open with a deeply gentle, non-judgmental acknowledgment of the profound emotional pain they are carrying right now.",
+            "Speak directly and warmly, reassuring the user in the very first two sentences that they are not alone and do not have to walk through this darkness by themselves.",
+            "Weave in a tender reminder of their immense, inherent worth to God, focusing softly on His unconditional love and His presence right beside them in their suffering.",
+            "Gently but clearly guide them toward safety, encouraging them to pause and reach out immediately to a trusted friend, family member, or professional who can stand with them right now.",
+            "Ensure the tone remains entirely comforting and calm, strictly avoiding any language that could induce guilt, shame, fear, or a sense of spiritual failure.",
+            "Conclude with a soft, supportive transition that places the dynamic crisis helpline numbers clearly before them."
           ].join(" "),
         };
 
       case "danger_from_other":
         return {
           systemInstruction: [
-            "Do not generate a prayer at all.",
-            "Generate a compassionate, calm, and safety-focused response.",
-            "Treat this as a potential immediate danger from another person. Respond with warmth, compassion, empathy, and understanding. Speak directly to the user in a calm, supportive, and caring manner.",
-            "Acknowledge the user's fear, distress, or emotional pain without judgment or condemnation. Reassure them that they do not have to face this situation alone.",
-            "Clearly encourage the user to seek immediate support from trusted people or emergency services if they are in immediate danger.",
-            "Encourage the user to move to a safe place if it can be done safely and to seek help from someone they know and trust.",
-            "Encourage the user to pause before taking any action and to seek immediate support if they feel they may act on thoughts of harming someone.",
-            "Offer biblical hope by reminding the user of God's love and that no problem they are facing is greater than His power.",
-            "Offer biblical hope by reminding the user that God is in control even when life feels frightening or uncertain, and that they can trust Him as they seek safety and support.",
-            "Do not imply or promise that prayer alone will ensure the user's safety or resolve the situation.",
-            "Do not encourage retaliation, revenge, confrontation, or unnecessary risk. Prioritize the user's immediate safety.",
-            "Do not encourage the user to remain in or return to a situation where they may be at immediate risk of harm.",
-            "Do not shame, blame, argue with, dismiss, or invalidate the user's feelings.",
-            "Do not make medical, psychological, or professional claims.",
-            "Do not minimize, dismiss, or debate the seriousness of the situation.",
-            "Do not dismiss or trivialize the user's concerns about their immediate safety.",
-            "Do not leave the user with spiritual encouragement alone. The response must include appropriate real-world safety guidance.",
+            "Adopt a deeply protective, gentle, and anchoring tone that prioritizes the user's immediate physical safety above all else.",
+            "Directly validate their fear and distress, reassuring them immediately that their safety matters and that they should not face this threat alone.",
+            "Urge the user clearly and immediately to quietly move to a secure physical location or a public, safe space if they can do so without escalating the situation.",
+            "Explicitly direct them to contact local emergency services or a trusted authority right now to secure their immediate protection.",
+            "Firmly guide them away from any form of direct confrontation, retaliation, or unnecessary physical risk, keeping the focus entirely on self-preservation.",
+            "Weave in a brief, powerful reminder of God’s protective love, framing Him as a refuge and a shield in times of trouble, providing the inner strength needed to step toward safety.",
+            "Explicitly prompt them to connect with real-world human support systems rather than relying on isolation or waiting out a dangerous situation."
           ].join(" "),
         };
 
       case "danger_to_other":
         return {
           systemInstruction: [
-            "Do not generate a prayer at all.",
-            "Generate a compassionate, calm, and safety-focused response.",
-            "Treat this as a potential immediate danger to another person. Respond with warmth, compassion, empathy, and understanding. Speak directly to the user in a calm, supportive, and caring manner.",
-            "Acknowledge the user's emotional distress without judgment or condemnation. Reassure them that they do not have to face this situation alone.",
-            "Clearly encourage the user to create distance from the situation, if it can be done safely, and to seek immediate support from trusted people or emergency services, as appropriate.",
-            "Encourage the user to talk openly with someone they know and trust rather than acting on thoughts or impulses that could cause harm.",
-            "Offer biblical hope by reminding the user of God's love and that no problem they are facing is greater than His power.",
-            "Offer biblical hope by reminding the user that God is in control even when emotions feel overwhelming, and that they can trust Him to give them wisdom, self-control, and strength as they seek support.",
-            "Do not imply or promise that prayer alone will resolve the situation.",
-            "Do not encourage retaliation, revenge, violence, confrontation, or unnecessary risk.",
-            "Do not encourage the user to act on thoughts or impulses that could harm another person.",
-            "Do not shame, blame, argue with, dismiss, or invalidate the user's feelings.",
-            "Do not make medical, psychological, or professional claims.",
-            "Do not minimize, dismiss, or debate the seriousness of the situation.",
-            "Do not leave the user with spiritual encouragement alone. The response must include appropriate real-world safety guidance.",
+            "Adopt a grounding, serene, and completely non-judgmental tone to help de-escalate intense emotional distress.",
+            "Acknowledge the intense weight and overwhelming nature of the current situation without validating destructive impulses.",
+            "Offer biblical hope by focusing on God's gift of inner peace, clarity, and the supernatural strength to exercise restraint and self-control when emotions run high.",
+            "Urget the user to safely create physical or situational distance from the conflict or individuals involved.",
+            "Clearly instruct the user to hit pause and immediately connect with emergency helpline services, trusted authorities, or a mentor before taking any actions."
           ].join(" "),
         };
 
@@ -88,21 +60,13 @@ export function buildPrayerInstructions(
       default:
         return {
           systemInstruction: [
-            "Do not generate a prayer at all.",
-            "Generate a compassionate, calm, and safety-focused response.",
-            "Treat this as a potential immediate safety crisis. Respond with warmth, compassion, empathy, and understanding. Speak directly to the user in a calm, supportive, and caring manner.",
-            "Acknowledge the user's emotional distress without judgment or condemnation. Reassure them that they do not have to face this situation alone.",
-            "Clearly encourage the user to seek immediate support from trusted people or emergency services, as appropriate.",
-            "Encourage the user to talk openly with someone they know and trust rather than facing this situation alone.",
-            "Offer biblical hope by reminding the user of God's love and that no problem they are facing is greater than His power.",
-            "Offer biblical hope by reminding the user that God is present with them even in uncertain and frightening circumstances, and that they can trust Him as they seek the support they need.",
-            "Do not assume facts, motives, or circumstances that the user has not shared.",
-            "Do not shame, blame, argue with, dismiss, or invalidate the user's feelings.",
-            "Do not make medical, psychological, or professional claims.",
-            "Do not imply or promise that prayer alone will resolve the situation.",
-            "Do not minimize, dismiss, or debate the seriousness of the situation.",
-            "Do not leave the user with spiritual encouragement alone. The response must include appropriate real-world safety guidance.",
-          ].join(" "),
+          "Adopt a steady, deeply reassuring, and completely non-judgmental tone suited for an active, unspecified crisis.",
+          "Directly acknowledge the severe weight of their distress in the opening sentence, confirming that their immediate well-being and safety are paramount.",
+          "Provide a universal encouragement to prioritize safety and physical well-being above all else, without speculating on the specific nature of the threat.",
+          "Urge the user immediately and explicitly to reach out to a professional helpline, emergency services, or a trusted person in their life right now.",
+          "Deliver a powerful spiritual reminder of God's unyielding presence and deep love during moments of total chaos, framing Him as a steady anchor who walks through the dark with us.",
+          "Present this biblical hope as an inner strength meant to empower them to seek immediate, real-world human support and protection."
+        ].join(" "),
         };
     }
   }
@@ -110,33 +74,23 @@ export function buildPrayerInstructions(
   if (decision.prayerMode === "SENSITIVE") {
     return {
       systemInstruction: [
-        "Generate a compassionate, biblically faithful, and sensitive Christian prayer.",
-        "Respond directly to what the user has shared.",
-        "Base the prayer only on the information the user provided. Do not assume emotions, motives, relationships, or circumstances that were not expressed.",
-        "Offer biblical hope and remind the user of God's love and that no problem they are facing is greater than His power.",
-        "Encourage the user to place their trust in God's goodness and faithfulness, reminding them that He remains in control even when life feels uncertain, and that His presence never leaves them.",
-        "Do not speculate about facts, intentions, or events that the user has not described.",
-        "Do not minimize, dismiss, or debate the seriousness of the user's concerns.",
-        "Do not assume that another person is acting with malicious intent unless the user explicitly states it.",
-        "Do not shame, blame, dismiss, invalidate, diagnose, or intensify the user's distress.",
-        "Do not reinforce anger, fear, guilt, shame, retaliation, or conflict.",
-        "Do not make medical, psychological, or professional claims.",
-        "Do not present uncertain outcomes as promises or guarantees from God.",
+        "Begin by quietly acknowledging the user's specific worry with a gentle, slow, and calming pace.",
+        "Weave in the beautiful biblical reality of God being incredibly near to those who are hurting or brokenhearted.",
+        "Focus heavily on the Lord's character as a safe refuge, a steady anchor, and a source of profound emotional comfort.",
+        "Incorporate a petition asking for wisdom, understanding, and clear guidance for the specific situation described.",
+        "Gently invite a spirit of stillness and relief, praying for strength and courage to endure this difficult season.",
+        "When praying about intense lack, hardship, suffering or difficulty, focus the petition entirely on leaning into God's sufficient grace, asking for the quiet strength to rest in His protective care one day at a time, without detailing specific earthly mechanisms of rescue."
       ].join(" "),
     };
   }
 
   return {
     systemInstruction: [
-      "Generate a compassionate, biblically faithful Christian prayer.",
-      "Respond directly to the user's prayer concern.",
-      "Base the prayer only on the information the user provided. Do not assume emotions, motives, relationships, or circumstances that were not expressed.",
-      "Remind the user of God's love and that no problem they are facing is greater than His power.",
-      "Encourage the user to continue trusting God, reminding them that He remains in control even when life feels uncertain and that His presence never leaves them.",
-      "Use a warm, respectful, hopeful, and encouraging tone.",
-      "Do not speculate about facts, intentions, or events that the user has not described.",
-      "Do not make medical, psychological, or professional claims.",
-      "Do not present uncertain outcomes as promises or guarantees from God.",
+      "Structure the prayer to lift up the user's specific area of need in the very first few sentences.",
+      "Weave in the theological theme of God's absolute sovereignty and immense care over our daily challenges.",
+      "Infuse the prayer with deep comfort, gently reassuring the user of the Lord's constant, abiding presence right alongside them.",
+      "Direct the heart toward a posture of trust, highlighting God's enduring faithfulness during moments of transition or stress.",
+      "Close with a petition for internal peace, mental clarity, and the quiet confidence to face whatever comes next."
     ].join(" "),
   };
 }

@@ -1,4 +1,8 @@
+"use client";
 
+import { useState } from "react";
+import SupportMinistryModal from "@/components/modal/SupportMinistryModal";
+import Modal from "@/components/modal/Modal";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -23,6 +27,7 @@ import {
 
 
 export default function Hero() {
+  const [isSupportMinistryOpen, setIsSupportMinistryOpen] = useState(false);  
   return (
 
 
@@ -151,6 +156,19 @@ export default function Hero() {
           </section>
 
           
+        <button
+            type="button"
+            onClick={() => setIsSupportMinistryOpen(true)}
+            className={
+                alumniSansSC.className +
+                " mt-6 rounded-full border border-black/20 bg-[#2B2B2B] px-10 py-4 text-[clamp(1.25rem,3vw,1.75rem)] font-medium tracking-[0.12em] text-white transition-all duration-300 hover:bg-[#B8B8B8] hover:text-black"
+            }
+        >
+            Support the Ministry
+        </button>
+
+
+
             <div
                 className="
                     mt-12
@@ -260,9 +278,13 @@ export default function Hero() {
                 </div>
             </div>
 
-          <p className={`${techb.className} mt-6 md:mt-10 mb-5 md:mb-0 text-xs md:text-sm opacity-50`}>
+          
+
+            
+
+            <p className={`${techb.className} mt-6 md:mt-10 mb-5 md:mb-0 text-xs md:text-sm opacity-50`}>
                Project Nehemiah • Under God's Construction
-          </p>
+            </p>
 
      </div>
 
@@ -286,6 +308,13 @@ export default function Hero() {
 </a>
 
 
+
+<Modal
+    isOpen={isSupportMinistryOpen}
+    onClose={() => setIsSupportMinistryOpen(false)}
+>
+    <SupportMinistryModal />
+</Modal>
   
   </main>
 

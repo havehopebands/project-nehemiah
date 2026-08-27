@@ -94,13 +94,13 @@ export default function Hero() {
                   " text-[clamp(1.75rem,4vw,3rem)] font-medium tracking-[0.12em] text-black"
               }
           >
-              One wristband. 
+              A simple wristband. 
               <br/>
               <br/>
-              Countless moments. 
+              A digital discipleship journey. 
               <br/>
               <br/>
-              One message of hope.
+              A message of hope.
           </p>
 
 

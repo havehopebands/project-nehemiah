@@ -4,7 +4,7 @@ import { useState } from "react";
 import Reveal from "@/components/Reveal";
 import Image from "next/image";
 import { redHatDisplay, publicSans } from "@/lib/fonts";
-import Modal from "@/components/modal/Modal";
+import PosterModal from "@/components/modal/PosterModal";
 import StoryModal from "@/components/modal/StoryModal";
 
 
@@ -112,12 +112,12 @@ export default function WristbandSection() {
 
       </div>
 
-            <Modal
+            <PosterModal
                   isOpen={isModalOpen}
                   onClose={() => setIsModalOpen(false)}
               >
                   <StoryModal />
-              </Modal>
+              </PosterModal>
 
 
 

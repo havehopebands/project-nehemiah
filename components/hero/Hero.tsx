@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ProductFilm from "../ProductFilm";
 import WristbandSection from "../WristbandSection";
+import DigitalDiscipleshipSection from "../DigitalDiscipleshipSection";
 import Header from "../Header";
 import { Mail } from "lucide-react";
 
@@ -105,6 +106,8 @@ export default function Hero() {
 
 
           <ProductFilm />
+
+          <DigitalDiscipleshipSection />
 
           <WristbandSection />
 

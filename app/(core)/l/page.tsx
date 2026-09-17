@@ -138,6 +138,7 @@ export default function LandingPage() {
             >
                 <div
                     className="
+                        isolate
                         flex
                         w-[clamp(220px,50vw,600px)]
                         flex-col

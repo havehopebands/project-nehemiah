@@ -1,6 +1,11 @@
 "use client";
 
 import { useRef, useState } from "react";
+import {
+    publicSans,
+    redHatDisplay,
+    alumniSansSC,
+} from "@/lib/fonts";
 
 const moments = [
     {
@@ -136,26 +141,30 @@ export default function LandingPage() {
                         flex
                         w-[clamp(220px,50vw,600px)]
                         flex-col
-                        rounded-[30px]
+                        rounded-[32px]
+
                         border
+                        bg-[#27292b]/25
+                        backdrop-blur-4xl
                         border-white/10
-                        bg-[#27292b]/85
+                        
                         px-[clamp(18px,4vw,42px)]
                         py-[clamp(14px,3vw,28px)]
-                        shadow-2xl
-                        backdrop-blur-2xl
+                        shadow-xl
+                        
                     "
                 >
                     <p
-                        className="
+                        className={`
+                            ${publicSans.className}
                             mb-2
                             text-center
                             text-[10px]
                             tracking-[0.18em]
-                            text-white/50
-                        "
+                            text-black/80
+                        `}
                     >
-                        Choose your moment:
+                        CHOOSE YOUR MOMENT:
                     </p>
 
                     <div
@@ -169,7 +178,7 @@ export default function LandingPage() {
                             onClick={() => moveMoment(-1)}
                             className="
                                 text-2xl
-                                text-white/60
+                                text-black/60
                                 transition
                                 hover:text-white
                             "
@@ -185,11 +194,12 @@ export default function LandingPage() {
                             "
                         >
                             <h2
-                                className="
-                                    text-[clamp(22px,4vw,42px)]
+                                className={`
+                                    ${alumniSansSC.className}
+                                    text-[clamp(38px,4vw,52px)]
                                     tracking-[0.16em]
-                                    text-[#c1a048]
-                                "
+                                    text-[#018c9e]
+                                `}
                             >
                                 {currentMoment.name}
                             </h2>
@@ -199,7 +209,7 @@ export default function LandingPage() {
                             onClick={() => moveMoment(1)}
                             className="
                                 text-2xl
-                                text-white/60
+                                text-black/60
                                 transition
                                 hover:text-white
                             "
@@ -209,13 +219,14 @@ export default function LandingPage() {
                     </div>
 
                     <p
-                        className="
+                        className={`
+                            ${publicSans.className}
                             mt-3
                             text-center
                             text-[clamp(14px,2vw,20px)]
                             leading-6
-                            text-white/80
-                        "
+                            text-black/70
+                        `}
                     >
                         {currentMoment.description}
                     </p>
